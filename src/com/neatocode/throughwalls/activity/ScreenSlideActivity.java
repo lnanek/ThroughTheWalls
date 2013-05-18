@@ -26,7 +26,7 @@ public class ScreenSlideActivity extends FragmentActivity {
 	
 	private static final String LOG_TAG = "ThroughWalls";
 	
-    private static final int NUM_PAGES = 3;
+    private static final int NUM_PAGES = TargetFinderActivity.TARGET_NAMES.length;
 
     private ViewPager mPager;
 

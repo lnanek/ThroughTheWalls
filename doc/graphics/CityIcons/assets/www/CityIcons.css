@@ -1,0 +1,24 @@
+#img2 {
+  -webkit-box-shadow: 10px 10px 5px #800;
+  box-shadow: 10px 10px 5px #800;
+}
+
+img {
+position: relative; top: 0px; left: 0px;
+
+background-color:white;
+background-image:
+  -webkit-radial-gradient(red 4px, transparent 48px),
+  -webkit-repeating-linear-gradient(45deg, red 2px,  green 4px, yellow 8px, blue 12px,
+                                    transparent 16px, red 20px, blue 24px,
+                                    transparent 28px, transparent 32px),
+  -webkit-repeating-linear-gradient(-45deg, red 2px,  green 4px, yellow 8px, blue 12px,
+                                    transparent 16px, red 20px, blue 24px,
+                                    transparent 28px, transparent 32px),
+  -webkit-radial-gradient(blue 8px, transparent 68px);
+
+background-size: 120px 120px, 4px 4px;
+background-position: 0 0;
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+

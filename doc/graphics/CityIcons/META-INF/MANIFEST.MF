@@ -1,0 +1,72 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: AfPh3OJoypH966MludSW6f1RHg4=
+
+Name: assets/www/CityIcons.css
+SHA1-Digest: lcWlpB34JQ92qon4lchk/N6+m2A=
+
+Name: assets/www/Leaning_Tower_of_Pisa.jpg
+SHA1-Digest: n+cDvDd8EnBhLtcsK+/00mXzSwU=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: Nq8q3HeTluE5JNCBpVvNy3BXtJI=
+
+Name: assets/www/Brandenburg-Gate-342px.jpg
+SHA1-Digest: twrK4d4k2SRGLDjocEa8lpARz90=
+
+Name: assets/www/Forbidden_City.jpg
+SHA1-Digest: UHDgLgG2WF8oCcGruYrPe7Yy4Bw=
+
+Name: assets/www/NYC_Empire_State_Building.jpg
+SHA1-Digest: BiTbyOCqxDbd94/cr/kSGZ8EoZc=
+
+Name: resources.arsc
+SHA1-Digest: sAE5gcP1ON5xhLnq+IoFGTbdUHQ=
+
+Name: assets/www/15631953-big-city-icons.jpg
+SHA1-Digest: G79vsR4vNC2tSYYvt+/E7uLCXyc=
+
+Name: assets/www/CityIcons.html
+SHA1-Digest: 9XUzCTn1qWFKZ+hncnzv/ZgZWEw=
+
+Name: classes.dex
+SHA1-Digest: lxhD9oPiQ6g2bbO2pIWQxLOz4lM=
+
+Name: res/drawable-xxhdpi/ic_launcher.png
+SHA1-Digest: GVIfdEOBv4gEny2T1jDhGGsZOBo=
+
+Name: assets/www/generic-city-icon.jpg
+SHA1-Digest: G79vsR4vNC2tSYYvt+/E7uLCXyc=
+
+Name: assets/www/Shwedagon.jpg
+SHA1-Digest: Y7vn/J4aQn8dGjq5Ge6WOhpHHf4=
+
+Name: AndroidManifest.xml
+SHA1-Digest: TeslEhs7d2Mdud9eu+UvD75Lo1o=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: RRxOSvpmhVfCwiprVV/wZlaqQpw=
+
+Name: res/layout/activity_city_icons_main.xml
+SHA1-Digest: BzthIhrSojl58RsCG494fWqT5Ro=
+
+Name: assets/www/Sydney_Opera_House.jpg
+SHA1-Digest: 9YlecLq2YcCn3MDxJColOH/rx7s=
+
+Name: assets/www/MyDiceRG1.apk
+SHA1-Digest: DLooFEGLEygEf9YTIdolJ/4NX+Y=
+
+Name: res/menu/city_icons_main.xml
+SHA1-Digest: srmRmsMXzwOZZgVR+SybVKehvfs=
+
+Name: assets/www/Tour_Eiffel.jpg
+SHA1-Digest: vmtD3qGi0UDLTocEFGfyIlmD25U=
+
+Name: assets/www/Big_Ben.jpg
+SHA1-Digest: y4kFuCCE+lXymgQMY34tS0eXAIg=
+
+Name: assets/www/Cologne_Cathedral.jpg
+SHA1-Digest: RQIU7oNa/kPuzHRatYzvd1HYjoc=
+

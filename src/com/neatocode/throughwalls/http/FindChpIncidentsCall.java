@@ -13,16 +13,9 @@ public class FindChpIncidentsCall extends AsyncCall {
 		void onFindChpIncidents(List<Placemark> data);
 	}
 	
-	public static final float CALIFORNIA_LAT = 37.544577f;
-	
-	public static final float CALIFORNIA_LON = -113.115234f;
-	
-	// If within this number of miles of California, offer to show CHP incidents.
-	public static final int OFFER_CHP_RADIUS_MILES = 600;
-	
 	public static final float M_PER_MI = 1609.344f;
 	
-	private static final String LOG_TAG = "FindGaragesCall";
+	private static final String LOG_TAG = "FindChpIncidentsCall";
 	
 	private final Handler mHandler = new Handler() {
 		@Override
@@ -70,7 +63,7 @@ public class FindChpIncidentsCall extends AsyncCall {
 			public void run() {
 				String url = buildUrl();
 				
-				List<Placemark> data = ResultParser.getPlacemarks(url);
+				List<Placemark> data = KmlResultParser.getPlacemarks(url);
 				
 				Message message = mHandler.obtainMessage(0, data);
 				mHandler.sendMessage(message);

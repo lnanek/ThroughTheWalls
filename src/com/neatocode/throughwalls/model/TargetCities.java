@@ -3,6 +3,8 @@ package com.neatocode.throughwalls.model;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.neatocode.throughwalls.R;
+
 public class TargetCities {
 
 	public static final Target BEIJING = 
@@ -18,6 +20,11 @@ public class TargetCities {
 	static {
 		OTHER_CITIES.add(TargetCities.BEIJING);
 		OTHER_CITIES.add(TargetCities.NYC);
+		
+		for(Target t : OTHER_CITIES) {
+			
+			t.indicatorDrawableId = R.drawable.marker_city;
+		}		
 	}
 
 }

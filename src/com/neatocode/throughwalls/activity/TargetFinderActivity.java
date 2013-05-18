@@ -21,31 +21,38 @@ import com.neatocode.throughwalls.R;
 import com.neatocode.throughwalls.http.FindChpIncidentsCall;
 import com.neatocode.throughwalls.http.FindChpIncidentsCall.OnFindChpIncidentsListener;
 import com.neatocode.throughwalls.http.FindRequestData;
+import com.neatocode.throughwalls.http.FindSheltersCall;
+import com.neatocode.throughwalls.http.FindSheltersCall.OnFindSheltersListener;
 import com.neatocode.throughwalls.http.Placemark;
 import com.neatocode.throughwalls.model.Target;
 import com.neatocode.throughwalls.model.TargetCities;
 import com.neatocode.throughwalls.view.Display;
 
-public class TargetFinderActivity extends Activity implements SensorEventListener,
-		LocationListener, OnFindChpIncidentsListener {
+public class TargetFinderActivity extends Activity implements
+		SensorEventListener, LocationListener, OnFindChpIncidentsListener,
+		OnFindSheltersListener {
 
 	// TODO use wake lock to turn on screen when run
-	
+
 	// TODO show distance under icon?
-	
+
 	// TODO sort targets by closest target
 
 	// TODO option to pick other targets: shelter vs. camera, etc.
 
-	public static final String TARGET_INDEX_EXTRA = TargetFinderActivity.class.getName() 
-			+ ".TARGET_INDEX_EXTRA";
+	public static final String TARGET_INDEX_EXTRA = TargetFinderActivity.class
+			.getName() + ".TARGET_INDEX_EXTRA";
+
+	public static final String[] TARGET_NAMES = new String[] { "Traffic Cams",
+			"Cities", "CHP Incidents", "Shelters" };
 	
-	public static final String[] TARGET_NAMES = new String[] {
-		"Traffic Cams",
-		"Cities",
-		"CHP Incidents"
-	};
-	
+	public static final int[] TARGET_ICONS = new int[] {
+		R.drawable.icon_camera,
+		R.drawable.icon_city,
+		R.drawable.icon_incident,
+		R.drawable.icon_shelter,
+		};
+
 	private static final String LOG_TAG = "ThroughWalls";
 
 	private SensorManager mSensorManager;
@@ -59,9 +66,9 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 	private List<Target> mTargets;
 
 	private int mTargetIndex;
-	
+
 	private int mTargetListIndex;
-	
+
 	private boolean mForeground;
 
 	@Override
@@ -78,18 +85,17 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 
 		// TODO sort nearest first
 		// TODO add cameras, shelters, etc..
-		
+
 		mTargetListIndex = getIntent().getIntExtra(TARGET_INDEX_EXTRA, 0);
-		if ( mTargetListIndex < 1 ) {
+		if (mTargetListIndex < 1) {
 			mTargets = Target.TARGET_LISTS.get(mTargetListIndex);
-			mDisplay.showTarget(mTargets.get(mTargetIndex));			
+			mDisplay.showTarget(mTargets.get(mTargetIndex));
 		}
 
 		// XXX use default location as Palo Alto for now.
 		// This gets overridden by any last used location in onResume,
 		// and by any fresh locations.
 		mDisplay.setLocation(TargetCities.PALO_ALTO.asLocation());
-		
 
 	}
 
@@ -102,7 +108,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
 		Log.i(LOG_TAG, "dispatchTouchEvent, event = " + ev);
-		
+
 		if (ev.getAction() == MotionEvent.ACTION_DOWN) {
 			toggleShowUrl();
 			return true;
@@ -115,7 +121,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 		Log.i(LOG_TAG, "showUrl");
 
 		if (!mDisplay.isWebViewVisible()) {
-				mDisplay.showDetailsView();
+			mDisplay.showDetailsView();
 			return true;
 		}
 		return false;
@@ -157,7 +163,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 			// If showing main AR screen on down swipe, leave program.
 			if (!mDisplay.isWebViewVisible()) {
 				finish();
-			// If showing a camera, go back to AR screen.
+				// If showing a camera, go back to AR screen.
 			} else {
 				mDisplay.hideDetailsView();
 			}
@@ -167,7 +173,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 			// On phone, volume keys move through cameras
 		case KeyEvent.KEYCODE_TAB:
 		case KeyEvent.KEYCODE_VOLUME_UP:
-			if ( event.isShiftPressed() ) {
+			if (event.isShiftPressed()) {
 				previousTarget();
 			} else {
 				nextTarget();
@@ -186,16 +192,16 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 			return super.dispatchKeyEvent(event);
 		}
 	}
-	
+
 	private void toggleShowUrl() {
 		// If showing webview, hide it.
 		if (mDisplay.isWebViewVisible()) {
 			mDisplay.hideDetailsView();
-			
-		// Otherwise show it.
+
+			// Otherwise show it.
 		} else {
 			showUrl();
-		}		
+		}
 	}
 
 	@Override
@@ -226,27 +232,36 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 					+ enabled);
 			mLocationManager.requestLocationUpdates(provider, 0, 0, this);
 		}
-		
+
 		mForeground = true;
 		loadChpIfNeeded();
 	}
-	
+
 	private void loadChpIfNeeded() {
 		Log.i(LOG_TAG, "loadChpIfNeeded");
-		
+
 		// TODO check if have gotten a location yet?
-		
-		if ( 2 == mTargetListIndex ) {
-			
+
+		if (2 == mTargetListIndex) {
+
 			final Location location = TargetCities.PALO_ALTO.asLocation();
-			
+
 			FindRequestData request = new FindRequestData(
-					location.getLatitude(),
-					location.getLongitude()					
-					);
-			
+					location.getLatitude(), location.getLongitude());
+
 			new FindChpIncidentsCall(this, this, request).downloadIncidents();
-		}		
+			return;
+		}
+
+		if (3 == mTargetListIndex) {
+
+			final Location location = TargetCities.PALO_ALTO.asLocation();
+
+			FindRequestData request = new FindRequestData(
+					location.getLatitude(), location.getLongitude());
+
+			new FindSheltersCall(this, this, request).downloadShelters();
+		}
 	}
 
 	@Override
@@ -291,33 +306,55 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 			final Bundle extras) {
 		// Log.i(LOG_TAG, "onStatusChanged");
 	}
-	
+
 	public static double microDegreesToDegrees(int microDegrees) {
-	    return microDegrees / 1E6;
+		return microDegrees / 1E6;
 	}
 
 	@Override
 	public void onFindChpIncidents(List<Placemark> data) {
 		Log.i(LOG_TAG, "onFindChpIncidents");
-		
+
 		if (!mForeground) {
 			return;
 		}
-		
+
 		List<Target> targets = new LinkedList<Target>();
-		for(Placemark p : data) {
-			
+		for (Placemark p : data) {
+
 			double lat = microDegreesToDegrees(p.getLat());
-			double lon = microDegreesToDegrees(p.getLon());			
-			Target target = new Target(null, lon, lat, 
-					p.getName());
+			double lon = microDegreesToDegrees(p.getLon());
+			Target target = new Target(null, lon, lat, p.getName());
 			target.description = p.getDescription();
 			target.indicatorDrawableId = R.drawable.marker_incident;
 			targets.add(target);
 		}
-		
+
 		mTargets = targets;
-		mDisplay.showTarget(mTargets.get(mTargetIndex));	
+		mDisplay.showTarget(mTargets.get(mTargetIndex));
+	}
+
+	@Override
+	public void onFindShelters(List<Placemark> data) {
+		Log.i(LOG_TAG, "onFindShelters");
+
+		if (!mForeground) {
+			return;
+		}
+
+		List<Target> targets = new LinkedList<Target>();
+		for (Placemark p : data) {
+
+			double lat = microDegreesToDegrees(p.getLat());
+			double lon = microDegreesToDegrees(p.getLon());
+			Target target = new Target(null, lon, lat, p.getName());
+			target.description = p.getDescription();
+			target.indicatorDrawableId = R.drawable.marker_shelter;
+			targets.add(target);
+		}
+
+		mTargets = targets;
+		mDisplay.showTarget(mTargets.get(mTargetIndex));
 	}
 
 }

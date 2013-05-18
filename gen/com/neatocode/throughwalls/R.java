@@ -23,15 +23,22 @@ public final class R {
     public static final class drawable {
         public static final int corner=0x7f020000;
         public static final int ic_launcher=0x7f020001;
-        public static final int indicator_left=0x7f020002;
-        public static final int indicator_right=0x7f020003;
-        public static final int marker_camera=0x7f020004;
-        public static final int marker_incident=0x7f020005;
+        public static final int icon_camera=0x7f020002;
+        public static final int icon_city=0x7f020003;
+        public static final int icon_incident=0x7f020004;
+        public static final int icon_shelter=0x7f020005;
+        public static final int indicator_left=0x7f020006;
+        public static final int indicator_right=0x7f020007;
+        public static final int marker_camera=0x7f020008;
+        public static final int marker_city=0x7f020009;
+        public static final int marker_incident=0x7f02000a;
+        public static final int marker_shelter=0x7f02000b;
     }
     public static final class id {
         public static final int content=0x7f070009;
         public static final int description=0x7f070007;
         public static final int frame=0x7f070000;
+        public static final int image1=0x7f07000a;
         public static final int indicator=0x7f070001;
         public static final int leftIndicator=0x7f070002;
         public static final int location=0x7f070004;

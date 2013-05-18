@@ -14,7 +14,7 @@ import org.xml.sax.XMLReader;
 
 import android.util.Log;
 
-public class ResultParser {
+public class KmlResultParser {
 
 	private static final String LOG_TAG = "MapService";
 	
