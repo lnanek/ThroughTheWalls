@@ -117,7 +117,8 @@ public class Display {
 
 		// Accept new point if no previous or previous less accurate.
 		if (null == currentLocationAccuracy
-				|| currentLocationAccuracy <= aLocation.getAccuracy()) {
+				|| 0 == currentLocationAccuracy 
+				|| aLocation.getAccuracy() <= currentLocationAccuracy ) {
 			// TODO throw out old points as well.
 
 			currentLat = aLocation.getLatitude();

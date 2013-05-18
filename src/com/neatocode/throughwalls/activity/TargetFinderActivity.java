@@ -1,11 +1,7 @@
 package com.neatocode.throughwalls.activity;
 
+import java.util.LinkedList;
 import java.util.List;
-
-import com.neatocode.throughwalls.model.Target;
-import com.neatocode.throughwalls.model.TargetCameras;
-import com.neatocode.throughwalls.model.TargetCities;
-import com.neatocode.throughwalls.view.Display;
 
 import android.app.Activity;
 import android.content.Context;
@@ -21,8 +17,16 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
+import com.neatocode.throughwalls.http.FindChpIncidentsCall;
+import com.neatocode.throughwalls.http.FindChpIncidentsCall.OnFindChpIncidentsListener;
+import com.neatocode.throughwalls.http.FindRequestData;
+import com.neatocode.throughwalls.http.Placemark;
+import com.neatocode.throughwalls.model.Target;
+import com.neatocode.throughwalls.model.TargetCities;
+import com.neatocode.throughwalls.view.Display;
+
 public class TargetFinderActivity extends Activity implements SensorEventListener,
-		LocationListener {
+		LocationListener, OnFindChpIncidentsListener {
 
 	// TODO use wake lock to turn on screen when run
 	
@@ -34,6 +38,12 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 
 	public static final String TARGET_INDEX_EXTRA = TargetFinderActivity.class.getName() 
 			+ ".TARGET_INDEX_EXTRA";
+	
+	public static final String[] TARGET_NAMES = new String[] {
+		"Traffic Cams",
+		"Cities",
+		"CHP Incidents"
+	};
 	
 	private static final String LOG_TAG = "ThroughWalls";
 
@@ -47,7 +57,11 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 
 	private List<Target> mTargets;
 
-	private int mCurrentTargetIndex;
+	private int mTargetIndex;
+	
+	private int mTargetListIndex;
+	
+	private boolean mForeground;
 
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
@@ -64,12 +78,18 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 		// TODO sort nearest first
 		// TODO add cameras, shelters, etc..
 		
-		final int targetListsIndex = getIntent().getIntExtra(TARGET_INDEX_EXTRA, 0);
-		mTargets = Target.TARGET_LISTS.get(targetListsIndex);
-		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
+		mTargetListIndex = getIntent().getIntExtra(TARGET_INDEX_EXTRA, 0);
+		if ( mTargetListIndex < 1 ) {
+			mTargets = Target.TARGET_LISTS.get(mTargetListIndex);
+			mDisplay.showTarget(mTargets.get(mTargetIndex));			
+		}
 
-		// TODO use default location as Palo Alto for now.
+		// XXX use default location as Palo Alto for now.
+		// This gets overridden by any last used location in onResume,
+		// and by any fresh locations.
 		mDisplay.setLocation(TargetCities.PALO_ALTO.asLocation());
+		
+
 	}
 
 	@Override
@@ -94,7 +114,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 		Log.i(LOG_TAG, "showUrl");
 
 		if (!mDisplay.isWebViewVisible()) {
-			final Target currentTarget = mTargets.get(mCurrentTargetIndex);
+			final Target currentTarget = mTargets.get(mTargetIndex);
 			if (null != currentTarget.url) {
 				mDisplay.showUrl(Target.getImageUrlFromD2(currentTarget.url));
 			}
@@ -106,21 +126,21 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 	private void nextTarget() {
 		Log.i(LOG_TAG, "nextTarget");
 
-		mCurrentTargetIndex++;
-		if (mCurrentTargetIndex >= mTargets.size()) {
-			mCurrentTargetIndex = 0;
+		mTargetIndex++;
+		if (mTargetIndex >= mTargets.size()) {
+			mTargetIndex = 0;
 		}
-		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
+		mDisplay.showTarget(mTargets.get(mTargetIndex));
 	}
 
 	private void previousTarget() {
 		Log.i(LOG_TAG, "previousTarget");
 
-		mCurrentTargetIndex--;
-		if (mCurrentTargetIndex < 0) {
-			mCurrentTargetIndex = mTargets.size() - 1;
+		mTargetIndex--;
+		if (mTargetIndex < 0) {
+			mTargetIndex = mTargets.size() - 1;
 		}
-		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
+		mDisplay.showTarget(mTargets.get(mTargetIndex));
 	}
 
 	@Override
@@ -208,12 +228,33 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 					+ enabled);
 			mLocationManager.requestLocationUpdates(provider, 0, 0, this);
 		}
+		
+		mForeground = true;
+		loadChpIfNeeded();
+	}
+	
+	private void loadChpIfNeeded() {
+		Log.i(LOG_TAG, "loadChpIfNeeded");
+		
+		// TODO check if have gotten a location yet?
+		
+		if ( 2 == mTargetListIndex ) {
+			
+			final Location location = TargetCities.PALO_ALTO.asLocation();
+			
+			FindRequestData request = new FindRequestData(
+					location.getLatitude(),
+					location.getLongitude()					
+					);
+			
+			new FindChpIncidentsCall(this, this, request).downloadIncidents();
+		}		
 	}
 
 	@Override
 	protected void onPause() {
 		// Log.i(LOG_TAG, "onPause");
-
+		mForeground = false;
 		super.onPause();
 		mSensorManager.unregisterListener(this);
 		mLocationManager.removeUpdates(this);
@@ -251,6 +292,33 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 	public void onStatusChanged(final String provider, final int status,
 			final Bundle extras) {
 		// Log.i(LOG_TAG, "onStatusChanged");
+	}
+	
+	public static double microDegreesToDegrees(int microDegrees) {
+	    return microDegrees / 1E6;
+	}
+
+	@Override
+	public void onFindChpIncidents(List<Placemark> data) {
+		Log.i(LOG_TAG, "onFindChpIncidents");
+		
+		if (!mForeground) {
+			return;
+		}
+		
+		List<Target> targets = new LinkedList<Target>();
+		for(Placemark p : data) {
+			
+			double lat = microDegreesToDegrees(p.getLat());
+			double lon = microDegreesToDegrees(p.getLon());			
+			Target target = new Target(null, lon, lat, 
+					p.getName());
+			target.description = p.getDescription();
+			targets.add(target);
+		}
+		
+		mTargets = targets;
+		mDisplay.showTarget(mTargets.get(mTargetIndex));	
 	}
 
 }

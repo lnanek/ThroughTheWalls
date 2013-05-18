@@ -22,9 +22,11 @@ import com.neatocode.throughwalls.R;
 
 public class ScreenSlideActivity extends FragmentActivity {
 
+	// TODO icons for menu items
+	
 	private static final String LOG_TAG = "ThroughWalls";
 	
-    private static final int NUM_PAGES = 2;
+    private static final int NUM_PAGES = 3;
 
     private ViewPager mPager;
 

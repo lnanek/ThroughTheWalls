@@ -12,11 +12,6 @@ import android.widget.TextView;
 import com.neatocode.throughwalls.R;
 
 public class ScreenSlidePageFragment extends Fragment {
-	
-	private static final String[] TARGET_NAMES = new String[] {
-		"Traffic Cams",
-		"CHP Incidents"
-	};
 
     public static final String ARG_PAGE = "page";
 
@@ -51,7 +46,7 @@ public class ScreenSlidePageFragment extends Fragment {
 
         // Set the title view to show the page number.
         ((TextView) rootView.findViewById(android.R.id.text1)).setText(
-        		TARGET_NAMES[mPageNumber]);
+        		TargetFinderActivity.TARGET_NAMES[mPageNumber]);
         
         rootView.setOnClickListener(new OnClickListener() {
 			

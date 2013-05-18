@@ -30,15 +30,17 @@ public class Target {
 	public String name;
 	
 	public String url;
+	
+	public String description;
 
-	public Target(String url, float lon, float lat, String name) {
+	public Target(String url, double lon, double lat, String name) {
 		this.url = url;
 		this.lat = lat;
 		this.lon = lon;
 		this.name = name;
 	}
 	
-	public Target(String url, float lon, float lat, String name, String videoUrl) {
+	public Target(String url, double lon, double lat, String name, String videoUrl) {
 		this.url = url;
 		this.lat = lat;
 		this.lon = lon;
