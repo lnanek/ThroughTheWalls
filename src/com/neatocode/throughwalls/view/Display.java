@@ -1,8 +1,13 @@
-package com.neatocode.throughwalls;
+package com.neatocode.throughwalls.view;
+
+import com.neatocode.throughwalls.R;
+import com.neatocode.throughwalls.R.id;
+import com.neatocode.throughwalls.R.layout;
+import com.neatocode.throughwalls.activity.TargetFinderActivity;
+import com.neatocode.throughwalls.model.Target;
 
 import android.location.Location;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
@@ -48,11 +53,11 @@ public class Display {
 	
 	private WebView view;
 	
-	private MainActivity mActivity;
+	private TargetFinderActivity mActivity;
 	
 	private boolean isWebViewVisible;
 
-	public Display(final MainActivity aActivity) {
+	public Display(final TargetFinderActivity aActivity) {
 		mActivity = aActivity;
 		
 		aActivity.getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -88,6 +93,7 @@ public class Display {
 			return;
 		}
 
+		// Clear previous camera image somehow.
 		isWebViewVisible = true;
 		Toast.makeText(mActivity, "Loading Camera...", Toast.LENGTH_LONG).show();	
 		/*

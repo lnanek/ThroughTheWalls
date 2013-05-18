@@ -1,27 +1,9 @@
-package com.neatocode.throughwalls;
+package com.neatocode.throughwalls.model;
 
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import android.location.Location;
-
-public class Target {
-
-	public static final Target BEIJING = 
-			new Target(null, -122.049694f, 37.39771f, "Beijing");
-	
-	public static final Target NYC = 
-			new Target(null, -73.982277f, 40.729568f, "NYC");
-
-	public static final Target PALO_ALTO = 
-			new Target(null, -122.146511f, 37.440519f, "Palo Alto");
-	
-	public static final List<Target> CITIES = new LinkedList<Target>();
-	static {
-		CITIES.add(Target.BEIJING);
-		CITIES.add(Target.NYC);
-	}
+public class TargetCameras {
 	
 	public static final List<Target> CAMERAS = new LinkedList<Target>();
 	static {		
@@ -887,43 +869,6 @@ public class Target {
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212799.htm",-117.831263f, 33.802192f, "COLLINS"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212800.htm",-117.831626f, 33.809669f, "KATELLA AVE"));		
 */
-	}
-	
-	public static String getImageUrlFromD2(final String url) {
-		int idStartIndex = url.lastIndexOf('/');
-		int idEndIndex = url.lastIndexOf(".");
-		String id = url.substring(idStartIndex, idEndIndex);
-		String result = "http://www.dot.ca.gov/cwwp2/data/d3/cctv/image/" + id + ".jpg?" + new Date().getTime();
-		return result;
-	}
-	
-	double lat;
-	
-	double lon;
-	
-	String name;
-	
-	String url;
-
-	public Target(String url, float lon, float lat, String name) {
-		this.url = url;
-		this.lat = lat;
-		this.lon = lon;
-		this.name = name;
-	}
-	
-	public Target(String url, float lon, float lat, String name, String videoUrl) {
-		this.url = url;
-		this.lat = lat;
-		this.lon = lon;
-		this.name = name;
-	}
-	
-	public Location asLocation() {
-		final Location targetLocation = new Location("ThroughGlass");
-		targetLocation.setLatitude(lat);
-		targetLocation.setLongitude(lon);
-		return targetLocation;
 	}
 
 }

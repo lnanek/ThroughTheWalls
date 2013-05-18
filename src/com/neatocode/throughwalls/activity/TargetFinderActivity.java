@@ -1,6 +1,11 @@
-package com.neatocode.throughwalls;
+package com.neatocode.throughwalls.activity;
 
 import java.util.List;
+
+import com.neatocode.throughwalls.model.Target;
+import com.neatocode.throughwalls.model.TargetCameras;
+import com.neatocode.throughwalls.model.TargetCities;
+import com.neatocode.throughwalls.view.Display;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,17 +21,20 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
-public class MainActivity extends Activity implements SensorEventListener,
+public class TargetFinderActivity extends Activity implements SensorEventListener,
 		LocationListener {
 
 	// TODO use wake lock to turn on screen when run
 	
-	// TODO center webview, show traffic camera image better
+	// TODO show distance under icon?
 	
 	// TODO sort targets by closest target
 
 	// TODO option to pick other targets: shelter vs. camera, etc.
 
+	public static final String TARGET_INDEX_EXTRA = TargetFinderActivity.class.getName() 
+			+ ".TARGET_INDEX_EXTRA";
+	
 	private static final String LOG_TAG = "ThroughWalls";
 
 	private SensorManager mSensorManager;
@@ -55,14 +63,13 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 		// TODO sort nearest first
 		// TODO add cameras, shelters, etc..
-		mTargets = Target.CAMERAS;
-		// mTargets = new LinkedList<Target>();
-		// mTargets.add(Target.BEIJING);
-		// mTargets.add(Target.NYC);
+		
+		final int targetListsIndex = getIntent().getIntExtra(TARGET_INDEX_EXTRA, 0);
+		mTargets = Target.TARGET_LISTS.get(targetListsIndex);
 		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
 
 		// TODO use default location as Palo Alto for now.
-		mDisplay.setLocation(Target.PALO_ALTO.asLocation());
+		mDisplay.setLocation(TargetCities.PALO_ALTO.asLocation());
 	}
 
 	@Override

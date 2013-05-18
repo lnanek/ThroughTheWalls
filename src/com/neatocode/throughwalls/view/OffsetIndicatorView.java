@@ -1,4 +1,7 @@
-package com.neatocode.throughwalls;
+package com.neatocode.throughwalls.view;
+
+import com.neatocode.throughwalls.R;
+import com.neatocode.throughwalls.R.drawable;
 
 import android.content.Context;
 import android.graphics.Canvas;
