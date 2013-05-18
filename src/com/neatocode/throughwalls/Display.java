@@ -21,9 +21,7 @@ public class Display {
 
 	private Float pitch;
 
-	private Double targetLat;
-
-	private Double targetLon;
+	private Target target;
 
 	private Double currentLat;
 
@@ -77,18 +75,17 @@ public class Display {
 		updateDisplay();
 	}
 
-	public void setTarget(final Location aLocation) {
-		if (null == aLocation) {
-			targetLat = null;
-			targetLon = null;
+	public void setTarget(final Target aTarget) {
+		if (null == aTarget) {
+			target = null;
 			updateDisplay();
 			return;
 		}
 
-		targetLat = aLocation.getLatitude();
-		targetLon = aLocation.getLongitude();
+		target = aTarget;
 		//locationText.setText(location.getLatitude() + "\n"
 		//		+ location.getLongitude());
+		locationText.setText(aTarget.name);
 		updateDisplay();
 	}
 
@@ -99,18 +96,33 @@ public class Display {
 		pitch = aPitch;
 		updateDisplay();
 	}
+	
+	public float normalize(final float deg) {
+		float result = deg;
+		while(result > 360) {
+			result -= 360;
+		}
+		while(result < -360) {
+			result += 360;
+		}
+		if ( Math.abs(result - 360) < Math.abs(result) ) {
+			return result - 360;
+		}
+		if ( Math.abs(result + 360) < Math.abs(result) ) {
+			return result + 360;
+		}
+		return result;
+	}
 
 	public void updateDisplay() {
 		if ( null == azimuth || null == roll || null == pitch ) {
 			return;
 		}
 		
-		if ( null == targetLat || null == targetLon ) {
+		if ( null == target ) {
 			return;
 		}
-		final Location targetLocation = new Location("ThroughGlass");
-		targetLocation.setLatitude(targetLat);
-		targetLocation.setLongitude(targetLon);
+		final Location targetLocation = target.asLocation();
 
 		if ( null == currentLat || null == currentLon ) {
 			return;
@@ -119,9 +131,10 @@ public class Display {
 		currentLocation.setLatitude(currentLat);
 		currentLocation.setLongitude(currentLon);
 		
-		float targetBearing = currentLocation.bearingTo(targetLocation);
-		float delta = targetBearing - azimuth;
+		float bearingToAsEastOfNorthDegrees = currentLocation.bearingTo(targetLocation);
+		float delta = normalize(azimuth - bearingToAsEastOfNorthDegrees);
 		// Do something with these orientation angles.
+		/*
 		text.setText(
 				  "a = " + azimuth + "\n"
 				+ "p = " + pitch + "\n" 
@@ -129,23 +142,29 @@ public class Display {
 				+ "b = " + targetBearing + "\n"
 				+ "d = " + delta
 				);
+		*/
+		final String deltaString = delta >= 0 ? ("+" + roundTenths(delta)) : roundTenths(delta);
+		text.setText(roundTenths(azimuth) + "° " + deltaString+ "°");
 				
 		leftIndicator.setVisibility(View.GONE);
 		rightIndicator.setVisibility(View.GONE);
 		indicator.setIndicatorOffset(null);
-		frame.setBackgroundColor(Color.GREEN);
+		//frame.setBackgroundColor(Color.GREEN);
 		
 		// Indicator is on screen at a certain offset.
-		
 		if ( Math.abs(delta) < SCREEN_WIDTH_DEGREES) {
 			indicator.setIndicatorOffset(delta/SCREEN_WIDTH_DEGREES);
-			frame.setBackgroundColor(Color.RED);
+			//frame.setBackgroundColor(Color.RED);
 		// Indicator is offscreen.
 		} else if ( delta < 0 ) {
 			leftIndicator.setVisibility(View.VISIBLE);
 		} else if ( delta > 0 ) {
 			rightIndicator.setVisibility(View.VISIBLE);
 		}
+	}
+	
+	private String roundTenths(float input) {
+		return "" + Math.round(input * 10) / 10.0;
 	}
 
 }

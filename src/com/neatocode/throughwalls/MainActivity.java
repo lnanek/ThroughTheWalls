@@ -1,10 +1,10 @@
 package com.neatocode.throughwalls;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -14,28 +14,12 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.WindowManager.LayoutParams;
-import android.widget.TextView;
+import android.view.MotionEvent;
 
 public class MainActivity extends Activity implements SensorEventListener,
 		LocationListener {
 	
 	private static final String LOG_TAG = "ThroughWalls";
-	
-	//private static final int ORIENTATION_DEG = 60;
-	//private static final int ORIENTATION_BUFFER = 10;
-	
-	// New York
-	private static final float TARGET_LONG = 40.729568f;
-	private static final float TARGET_LAT = -73.982277f;
-	
-	// Palo Alto
-	private static final float PALO_ALTO_LONG = 37.440519f;
-	private static final float PALO_ALTO_LAT = -122.146511f;
 
 	private SensorManager mSensorManager;
 
@@ -44,7 +28,11 @@ public class MainActivity extends Activity implements SensorEventListener,
 	private LocationManager mLocationManager;
 	
 	private Display mDisplay;
-
+	
+	private List<Target> mTargets;
+	
+	private int mCurrentTargetIndex;
+	
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);	
@@ -55,18 +43,31 @@ public class MainActivity extends Activity implements SensorEventListener,
 		mOrientation = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
 		mDisplay = new Display(this);
 
-		// Use NYC as test target for now.
+		mTargets = new LinkedList<Target>();
+		// Use NYC, Beijing as test targets for now.
 		// TODO add cameras, shelters, etc..
-		final Location targetLocation = new Location("ThroughGlass");
-		targetLocation.setLatitude(TARGET_LAT);
-		targetLocation.setLongitude(TARGET_LONG);
-		mDisplay.setTarget(targetLocation);
+		// TODO sort nearest first
+		mTargets.add(Target.BEIJING);
+		mTargets.add(Target.NYC);
+		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
 		
 		// TODO use default location as Palo Alto for now.
-		final Location sourceLocation = new Location("ThroughGlass");
-		sourceLocation.setLatitude(PALO_ALTO_LONG);
-		sourceLocation.setLongitude(PALO_ALTO_LAT);
-		mDisplay.setLocation(sourceLocation);
+		mDisplay.setLocation(Target.PALO_ALTO.asLocation());
+	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+
+		if ( event.getAction() == MotionEvent.ACTION_DOWN ) {
+			mCurrentTargetIndex++;
+			if ( mCurrentTargetIndex >= mTargets.size() ) {
+				mCurrentTargetIndex = 0;
+			}
+			mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+			return true;
+		}
+		
+		return super.onTouchEvent(event);
 	}
 
 	@Override
@@ -84,7 +85,6 @@ public class MainActivity extends Activity implements SensorEventListener,
 			// Set last known location if we have it.
 			// TODO indicate to user if very out of date?
 			// Time label in corner? some sort of scanner ping lines moving outward?		
-			// XXX does null get last known for any location?
 			final Location lastKnownLocation = mLocationManager.getLastKnownLocation(provider);
 			mDisplay.setLocation(lastKnownLocation);			
 			
