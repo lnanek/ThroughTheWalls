@@ -9,30 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     tools:context=".MainActivity" >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        tools:context=".MainActivity" >
-
-        <TextView
-            android:id="@+id/location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="14px"
-            android:textColor="#FFF"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:textSize="26sp" />
-    </LinearLayout>
 
     <com.neatocode.throughwalls.OffsetIndicatorView
         android:id="@+id/indicator"
@@ -64,10 +42,34 @@
             android:visibility="gone" />
     </LinearLayout>
 
-        <WebView
-            android:id="@+id/web"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone" />
-        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14px"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
 </FrameLayout>

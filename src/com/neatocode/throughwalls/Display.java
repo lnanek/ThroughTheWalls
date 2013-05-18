@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 public class Display {
 	
+	// TODO show page turn in corner if have camera image, etc.
+	
 	private static final String LOG_TAG = "ThroughWalls";
 		
 	private static final float SCREEN_WIDTH_DEGREES = 15f;
@@ -64,6 +66,10 @@ public class Display {
 		view = (WebView) aActivity.findViewById(R.id.web);
 		WebSettings webSettings = view.getSettings();
 		webSettings.setJavaScriptEnabled(true);
+		view.setInitialScale(75);
+		view.setFocusable(false);
+		view.setFocusableInTouchMode(false);
+		view.setClickable(false);
 		indicator = (OffsetIndicatorView) aActivity.findViewById(R.id.indicator);
 		frame = (ViewGroup) aActivity.findViewById(R.id.frame);
 		text = (TextView) aActivity.findViewById(R.id.text);
@@ -77,13 +83,14 @@ public class Display {
 	public void showUrl(String url) {
 		if ( null == url || 0 == url.trim().length() ) {
 			isWebViewVisible = false;
-			view.setOnClickListener(null);
+			//view.setOnClickListener(null);
 			view.setVisibility(View.GONE);
 			return;
 		}
 
 		isWebViewVisible = true;
-		Toast.makeText(mActivity, "Loading Camera...", Toast.LENGTH_LONG).show();		
+		Toast.makeText(mActivity, "Loading Camera...", Toast.LENGTH_LONG).show();	
+		/*
 		view.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -91,6 +98,7 @@ public class Display {
 				showUrl(null);
 			}
 		});
+		*/
 		view.setVisibility(View.VISIBLE);
 		view.loadUrl(url);
 	}

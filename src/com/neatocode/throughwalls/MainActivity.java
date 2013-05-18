@@ -20,6 +20,14 @@ import android.view.MotionEvent;
 public class MainActivity extends Activity implements SensorEventListener,
 		LocationListener {
 
+	// TODO use wake lock to turn on screen when run
+	
+	// TODO center webview, show traffic camera image better
+	
+	// TODO sort targets by closest target
+
+	// TODO option to pick other targets: shelter vs. camera, etc.
+
 	private static final String LOG_TAG = "ThroughWalls";
 
 	private SensorManager mSensorManager;
@@ -36,6 +44,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
+		Log.i(LOG_TAG, "onCreate");
 		super.onCreate(savedInstanceState);
 
 		mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
@@ -48,9 +57,9 @@ public class MainActivity extends Activity implements SensorEventListener,
 		// TODO sort nearest first
 		// TODO add cameras, shelters, etc..
 		mTargets = Target.CAMERAS;
-		//mTargets = new LinkedList<Target>();
-		//mTargets.add(Target.BEIJING);
-		//mTargets.add(Target.NYC);
+		// mTargets = new LinkedList<Target>();
+		// mTargets.add(Target.BEIJING);
+		// mTargets.add(Target.NYC);
 		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
 
 		// TODO use default location as Palo Alto for now.
@@ -59,29 +68,48 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-
-		if (event.getAction() == MotionEvent.ACTION_DOWN) {
-			if ( !mDisplay.isWebViewVisible() ) {	
-				final Target currentTarget = mTargets.get(mCurrentTargetIndex);
-				if ( null != currentTarget.url ) {
-					mDisplay.showUrl(currentTarget.url);
-				}
-				return true;
-			}			
-		}
-
+		Log.i(LOG_TAG, "onTouchEvent, event = " + event);
 		return super.onTouchEvent(event);
 	}
-	
+
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev) {
+		Log.i(LOG_TAG, "dispatchTouchEvent, event = " + ev);
+		
+		if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+			toggleShowUrl();
+			return true;
+		}
+
+		return super.dispatchTouchEvent(ev);
+	}
+
+	private boolean showUrl() {
+		Log.i(LOG_TAG, "showUrl");
+
+		if (!mDisplay.isWebViewVisible()) {
+			final Target currentTarget = mTargets.get(mCurrentTargetIndex);
+			if (null != currentTarget.url) {
+				mDisplay.showUrl(currentTarget.url);
+			}
+			return true;
+		}
+		return false;
+	}
+
 	private void nextTarget() {
+		Log.i(LOG_TAG, "nextTarget");
+
 		mCurrentTargetIndex++;
 		if (mCurrentTargetIndex >= mTargets.size()) {
 			mCurrentTargetIndex = 0;
 		}
 		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
 	}
-	
+
 	private void previousTarget() {
+		Log.i(LOG_TAG, "previousTarget");
+
 		mCurrentTargetIndex--;
 		if (mCurrentTargetIndex < 0) {
 			mCurrentTargetIndex = mTargets.size() - 1;
@@ -90,23 +118,60 @@ public class MainActivity extends Activity implements SensorEventListener,
 	}
 
 	@Override
-	public boolean dispatchKeyEvent(KeyEvent event) {
-		int action = event.getAction();
-		int keyCode = event.getKeyCode();
+	public boolean dispatchKeyEvent(final KeyEvent event) {
+		Log.i(LOG_TAG, "dispatchKeyEvent, event = " + event);
+
+		final int action = event.getAction();
+		if (action != KeyEvent.ACTION_DOWN) {
+			return false;
+		}
+
+		final int keyCode = event.getKeyCode();
 		switch (keyCode) {
+		// Back button on standard Android, swipe down on Google Glass
+		case KeyEvent.KEYCODE_BACK:
+			// If showing main AR screen on down swipe, leave program.
+			if (!mDisplay.isWebViewVisible()) {
+				finish();
+			// If showing a camera, go back to AR screen.
+			} else {
+				mDisplay.showUrl(null);
+			}
+			return true;
+
+			// Left and right swipe through the cameras on Google Glass.
+			// On phone, volume keys move through cameras
+		case KeyEvent.KEYCODE_TAB:
 		case KeyEvent.KEYCODE_VOLUME_UP:
-			if (action == KeyEvent.ACTION_UP) {
+			if ( event.isShiftPressed() ) {
+				previousTarget();
+			} else {
 				nextTarget();
 			}
 			return true;
 		case KeyEvent.KEYCODE_VOLUME_DOWN:
-			if (action == KeyEvent.ACTION_DOWN) {
-				previousTarget();
-			}
+			previousTarget();
 			return true;
+
+			// Tapping views the camera.
+		case KeyEvent.KEYCODE_DPAD_CENTER:
+			toggleShowUrl();
+			return true;
+
 		default:
 			return super.dispatchKeyEvent(event);
 		}
+	}
+	
+	private void toggleShowUrl() {
+		// If showing webview, hide it.
+		if (mDisplay.isWebViewVisible()) {
+			mDisplay.showUrl(null);
+			
+		// Otherwise show it.
+		} else {
+			showUrl();
+		}		
 	}
 
 	@Override
@@ -116,6 +181,8 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 	@Override
 	protected void onResume() {
+		// Log.i(LOG_TAG, "onResume");
+
 		super.onResume();
 		mSensorManager.registerListener(this, mOrientation,
 				SensorManager.SENSOR_DELAY_NORMAL);
@@ -139,6 +206,8 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 	@Override
 	protected void onPause() {
+		// Log.i(LOG_TAG, "onPause");
+
 		super.onPause();
 		mSensorManager.unregisterListener(this);
 		mLocationManager.removeUpdates(this);
@@ -146,6 +215,8 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 	@Override
 	public void onSensorChanged(final SensorEvent event) {
+		// Log.i(LOG_TAG, "onSensorChanged");
+
 		float azimuth_angle = event.values[0];
 		float pitch_angle = event.values[1];
 		float roll_angle = event.values[2];
@@ -154,21 +225,26 @@ public class MainActivity extends Activity implements SensorEventListener,
 
 	@Override
 	public void onLocationChanged(final Location location) {
+		// Log.i(LOG_TAG, "onLocationChanged");
+
 		mDisplay.setLocation(location);
 	}
 
 	@Override
 	public void onProviderDisabled(final String provider) {
+		// Log.i(LOG_TAG, "onProviderDisabled");
 		// TODO warn user if no providers enabled
 	}
 
 	@Override
 	public void onProviderEnabled(final String provider) {
+		// Log.i(LOG_TAG, "onProviderEnabled");
 	}
 
 	@Override
 	public void onStatusChanged(final String provider, final int status,
 			final Bundle extras) {
+		// Log.i(LOG_TAG, "onStatusChanged");
 	}
 
 }
