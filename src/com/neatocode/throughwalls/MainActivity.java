@@ -25,6 +25,10 @@ public class MainActivity extends Activity implements SensorEventListener,
 		LocationListener {
 	
 	private static final String LOG_TAG = "ThroughWalls";
+	
+	private static final int ORIENTATION_DEG = 60;
+	
+	private static final int ORIENTATION_BUFFER = 10;
 
 	private TextView text;
 
@@ -50,6 +54,8 @@ public class MainActivity extends Activity implements SensorEventListener,
 	
 	Double gpsLon;
 	
+	private ViewGroup frame;
+	
 	private static void removeBackgrounds(final View aView) {
 		aView.setBackgroundDrawable(null);
 		aView.setBackgroundColor(Color.TRANSPARENT);
@@ -74,6 +80,8 @@ public class MainActivity extends Activity implements SensorEventListener,
 		setContentView(R.layout.activity_main);
 		
 		//removeBackgrounds(getWindow().getDecorView());
+		
+		frame = (ViewGroup) findViewById(R.id.frame);
 
 		text = (TextView) findViewById(R.id.text);
 
@@ -138,6 +146,14 @@ public class MainActivity extends Activity implements SensorEventListener,
 		// Do something with these orientation angles.
 		text.setText("azimuth, pitch, roll, lat, lon:\n" + azimuth_angle + "\n"
 				+ pitch_angle + "\n" + roll_angle);
+		
+		final boolean aboveThreshold = azimuth_angle > (ORIENTATION_DEG - ORIENTATION_BUFFER);
+		final boolean belowThreshold = azimuth_angle < (ORIENTATION_DEG + ORIENTATION_BUFFER);
+		if ( aboveThreshold && belowThreshold ) {
+			frame.setBackgroundColor(Color.RED);
+		} else {
+			frame.setBackgroundColor(Color.GREEN);
+		}
 	}
 
 	@Override
