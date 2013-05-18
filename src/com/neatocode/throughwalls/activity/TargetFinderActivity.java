@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
+import com.neatocode.throughwalls.R;
 import com.neatocode.throughwalls.http.FindChpIncidentsCall;
 import com.neatocode.throughwalls.http.FindChpIncidentsCall.OnFindChpIncidentsListener;
 import com.neatocode.throughwalls.http.FindRequestData;
@@ -114,10 +115,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 		Log.i(LOG_TAG, "showUrl");
 
 		if (!mDisplay.isWebViewVisible()) {
-			final Target currentTarget = mTargets.get(mTargetIndex);
-			if (null != currentTarget.url) {
-				mDisplay.showUrl(Target.getImageUrlFromD2(currentTarget.url));
-			}
+				mDisplay.showDetailsView();
 			return true;
 		}
 		return false;
@@ -161,7 +159,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 				finish();
 			// If showing a camera, go back to AR screen.
 			} else {
-				mDisplay.showUrl(null);
+				mDisplay.hideDetailsView();
 			}
 			return true;
 
@@ -192,7 +190,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 	private void toggleShowUrl() {
 		// If showing webview, hide it.
 		if (mDisplay.isWebViewVisible()) {
-			mDisplay.showUrl(null);
+			mDisplay.hideDetailsView();
 			
 		// Otherwise show it.
 		} else {
@@ -314,6 +312,7 @@ public class TargetFinderActivity extends Activity implements SensorEventListene
 			Target target = new Target(null, lon, lat, 
 					p.getName());
 			target.description = p.getDescription();
+			target.indicatorDrawableId = R.drawable.marker_incident;
 			targets.add(target);
 		}
 		

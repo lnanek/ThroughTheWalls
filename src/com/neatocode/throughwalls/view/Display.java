@@ -42,8 +42,6 @@ public class Display {
 	private TextView text;
 
 	private TextView locationText;
-
-	private ViewGroup frame;
 	
 	private OffsetIndicatorView indicator;
 	
@@ -76,7 +74,6 @@ public class Display {
 		view.setFocusableInTouchMode(false);
 		view.setClickable(false);
 		indicator = (OffsetIndicatorView) aActivity.findViewById(R.id.indicator);
-		frame = (ViewGroup) aActivity.findViewById(R.id.frame);
 		text = (TextView) aActivity.findViewById(R.id.text);
 		locationText = (TextView) aActivity.findViewById(R.id.location);
 	}
@@ -85,28 +82,31 @@ public class Display {
 		return isWebViewVisible;
 	}
 	
-	public void showUrl(String url) {
-		if ( null == url || 0 == url.trim().length() ) {
-			isWebViewVisible = false;
-			//view.setOnClickListener(null);
-			view.setVisibility(View.GONE);
+	public void hideDetailsView() {
+		isWebViewVisible = false;
+		view.setVisibility(View.GONE);
+	}
+	
+	public void showDetailsView() {
+
+		// TODO Clear previous camera image somehow, flashing visible when loading new one.
+		isWebViewVisible = true;
+		Toast.makeText(mActivity, "Loading view...", Toast.LENGTH_LONG).show();	
+
+		view.setVisibility(View.VISIBLE);
+		
+		if ( null != target.url ) {
+			view.loadUrl(Target.getImageUrlFromD2(target.url));			
 			return;
 		}
-
-		// Clear previous camera image somehow.
-		isWebViewVisible = true;
-		Toast.makeText(mActivity, "Loading Camera...", Toast.LENGTH_LONG).show();	
-		/*
-		view.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Toast.makeText(mActivity, "Leaving Camera", Toast.LENGTH_LONG).show();
-				showUrl(null);
-			}
-		});
-		*/
-		view.setVisibility(View.VISIBLE);
-		view.loadUrl(url);
+		
+		if ( null != target.description ) {
+			view.loadData(target.description, "text/html", "UTF-8");
+			return;
+		}
+		
+		hideDetailsView();
+		
 	}
 
 	public void setLocation(final Location aLocation) {
@@ -129,7 +129,7 @@ public class Display {
 	}
 
 	public void showTarget(final Target aTarget) {
-		showUrl(null);
+		hideDetailsView();
 		if (null == aTarget) {
 			target = null;
 			updateDisplay();
@@ -203,6 +203,7 @@ public class Display {
 		leftIndicator.setVisibility(View.GONE);
 		rightIndicator.setVisibility(View.GONE);
 		indicator.setIndicatorOffset(null);
+		indicator.setIndicatorDrawable(target.indicatorDrawableId);
 		//frame.setBackgroundColor(Color.GREEN);
 		
 		// Indicator is on screen at a certain offset.

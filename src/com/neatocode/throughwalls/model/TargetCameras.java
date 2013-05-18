@@ -3,6 +3,9 @@ package com.neatocode.throughwalls.model;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.neatocode.throughwalls.R;
+import com.neatocode.throughwalls.http.Placemark;
+
 public class TargetCameras {
 	
 	public static final List<Target> CAMERAS = new LinkedList<Target>();
@@ -869,6 +872,12 @@ public class TargetCameras {
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212799.htm",-117.831263f, 33.802192f, "COLLINS"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212800.htm",-117.831626f, 33.809669f, "KATELLA AVE"));		
 */
+				
+				for(Target t : CAMERAS) {
+				
+					t.indicatorDrawableId = R.drawable.marker_camera;
+				}
+				
 	}
 
 }

@@ -23,6 +23,8 @@ public class Target {
 		return result;
 	}
 	
+	public int indicatorDrawableId;
+	
 	double lat;
 	
 	double lon;

@@ -16,7 +16,7 @@ public class OffsetIndicatorView extends View {
 	private Float mOffsetPercent;
 	
 	private Drawable mIndicator;
-
+	
 	public OffsetIndicatorView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		init(context);
@@ -39,6 +39,14 @@ public class OffsetIndicatorView extends View {
 	public void setIndicatorOffset(final Float aOffsetPercent) {
 		mOffsetPercent = aOffsetPercent;
 		invalidate();
+	}
+	
+	public void setIndicatorDrawable(final Integer drawableId) {
+		if ( null == drawableId ) {
+			mIndicator = getContext().getResources().getDrawable(R.drawable.marker_camera);			
+			return;
+		}
+		mIndicator = getContext().getResources().getDrawable(drawableId);		
 	}
 
 	@Override
