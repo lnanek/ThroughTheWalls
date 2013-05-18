@@ -26,9 +26,16 @@ public class MainActivity extends Activity implements SensorEventListener,
 	
 	private static final String LOG_TAG = "ThroughWalls";
 	
-	private static final int ORIENTATION_DEG = 60;
-	
+	//private static final int ORIENTATION_DEG = 60;
 	private static final int ORIENTATION_BUFFER = 10;
+	
+	// New York
+	private static final float TARGET_LONG = 40.729568f;
+	private static final float TARGET_LAT = -73.982277f;
+	
+	// Palo Alto
+	private static final float PALO_ALTO_LONG = 37.440519f;
+	private static final float PALO_ALTO_LAT = -122.146511f;
 
 	private TextView text;
 
@@ -39,12 +46,6 @@ public class MainActivity extends Activity implements SensorEventListener,
 	private Sensor mOrientation;
 
 	private LocationManager mLocationManager;
-	
-	Float azimuth_angle;
-
-	Float pitch_angle;
-	
-	Float roll_angle;
 	
 	Double networkLat;
 	
@@ -143,17 +144,38 @@ public class MainActivity extends Activity implements SensorEventListener,
 		float azimuth_angle = event.values[0];
 		float pitch_angle = event.values[1];
 		float roll_angle = event.values[2];
-		// Do something with these orientation angles.
-		text.setText("azimuth, pitch, roll, lat, lon:\n" + azimuth_angle + "\n"
-				+ pitch_angle + "\n" + roll_angle);
 		
-		final boolean aboveThreshold = azimuth_angle > (ORIENTATION_DEG - ORIENTATION_BUFFER);
-		final boolean belowThreshold = azimuth_angle < (ORIENTATION_DEG + ORIENTATION_BUFFER);
+		
+		final Location targetLocation = new Location("ThroughGlass");
+		targetLocation.setLatitude(TARGET_LAT);
+		targetLocation.setLongitude(TARGET_LONG);
+		final Location sourceLocation = new Location("ThroughGlass");
+		sourceLocation.setLatitude(PALO_ALTO_LONG);
+		sourceLocation.setLongitude(PALO_ALTO_LAT);
+		
+		float targetBearing = sourceLocation.bearingTo(targetLocation);
+		
+		showRedBackgroundOnTargetBearing(azimuth_angle, targetBearing);
+		
+
+		// Do something with these orientation angles.
+		text.setText(
+				  "a = " + azimuth_angle + "\n"
+				+ "p = " + pitch_angle + "\n" 
+				+ "r = " + roll_angle + "\n" 
+				+ "b = " + targetBearing
+				
+				);
+	}
+	
+	private void showRedBackgroundOnTargetBearing(float azimuth_angle, float target) {
+		final boolean aboveThreshold = azimuth_angle > (target - ORIENTATION_BUFFER);
+		final boolean belowThreshold = azimuth_angle < (target + ORIENTATION_BUFFER);
 		if ( aboveThreshold && belowThreshold ) {
 			frame.setBackgroundColor(Color.RED);
 		} else {
 			frame.setBackgroundColor(Color.GREEN);
-		}
+		}		
 	}
 
 	@Override
