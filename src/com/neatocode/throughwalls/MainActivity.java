@@ -51,7 +51,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 		//mTargets = new LinkedList<Target>();
 		//mTargets.add(Target.BEIJING);
 		//mTargets.add(Target.NYC);
-		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
 
 		// TODO use default location as Palo Alto for now.
 		mDisplay.setLocation(Target.PALO_ALTO.asLocation());
@@ -61,8 +61,13 @@ public class MainActivity extends Activity implements SensorEventListener,
 	public boolean onTouchEvent(MotionEvent event) {
 
 		if (event.getAction() == MotionEvent.ACTION_DOWN) {
-			nextTarget();
-			return true;
+			if ( !mDisplay.isWebViewVisible() ) {	
+				final Target currentTarget = mTargets.get(mCurrentTargetIndex);
+				if ( null != currentTarget.url ) {
+					mDisplay.showUrl(currentTarget.url);
+				}
+				return true;
+			}			
 		}
 
 		return super.onTouchEvent(event);
@@ -73,7 +78,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 		if (mCurrentTargetIndex >= mTargets.size()) {
 			mCurrentTargetIndex = 0;
 		}
-		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
 	}
 	
 	private void previousTarget() {
@@ -81,7 +86,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 		if (mCurrentTargetIndex < 0) {
 			mCurrentTargetIndex = mTargets.size() - 1;
 		}
-		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+		mDisplay.showTarget(mTargets.get(mCurrentTargetIndex));
 	}
 
 	@Override

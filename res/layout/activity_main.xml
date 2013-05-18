@@ -64,4 +64,10 @@
             android:visibility="gone" />
     </LinearLayout>
 
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        
 </FrameLayout>

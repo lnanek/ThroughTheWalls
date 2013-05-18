@@ -1,13 +1,16 @@
 package com.neatocode.throughwalls;
 
-import android.graphics.Color;
 import android.location.Location;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Display {
 	
@@ -40,8 +43,16 @@ public class Display {
 	private View leftIndicator;
 	
 	private View rightIndicator;
+	
+	private WebView view;
+	
+	private MainActivity mActivity;
+	
+	private boolean isWebViewVisible;
 
 	public Display(final MainActivity aActivity) {
+		mActivity = aActivity;
+		
 		aActivity.getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON);
 		aActivity.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		aActivity.getWindow().addFlags(
@@ -50,11 +61,38 @@ public class Display {
 		aActivity.setContentView(R.layout.activity_main);
 		leftIndicator= (View) aActivity.findViewById(R.id.leftIndicator);
 		rightIndicator= (View) aActivity.findViewById(R.id.rightIndicator);
-
+		view = (WebView) aActivity.findViewById(R.id.web);
+		WebSettings webSettings = view.getSettings();
+		webSettings.setJavaScriptEnabled(true);
 		indicator = (OffsetIndicatorView) aActivity.findViewById(R.id.indicator);
 		frame = (ViewGroup) aActivity.findViewById(R.id.frame);
 		text = (TextView) aActivity.findViewById(R.id.text);
 		locationText = (TextView) aActivity.findViewById(R.id.location);
+	}
+	
+	public boolean isWebViewVisible() {
+		return isWebViewVisible;
+	}
+	
+	public void showUrl(String url) {
+		if ( null == url || 0 == url.trim().length() ) {
+			isWebViewVisible = false;
+			view.setOnClickListener(null);
+			view.setVisibility(View.GONE);
+			return;
+		}
+
+		isWebViewVisible = true;
+		Toast.makeText(mActivity, "Loading Camera...", Toast.LENGTH_LONG).show();		
+		view.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(mActivity, "Leaving Camera", Toast.LENGTH_LONG).show();
+				showUrl(null);
+			}
+		});
+		view.setVisibility(View.VISIBLE);
+		view.loadUrl(url);
 	}
 
 	public void setLocation(final Location aLocation) {
@@ -75,7 +113,8 @@ public class Display {
 		updateDisplay();
 	}
 
-	public void setTarget(final Target aTarget) {
+	public void showTarget(final Target aTarget) {
+		showUrl(null);
 		if (null == aTarget) {
 			target = null;
 			updateDisplay();
