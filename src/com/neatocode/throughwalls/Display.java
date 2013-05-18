@@ -130,7 +130,7 @@ public class Display {
 		currentLocation.setLongitude(currentLon);
 		
 		float bearingToAsEastOfNorthDegrees = currentLocation.bearingTo(targetLocation);
-		float delta = normalize(azimuth - bearingToAsEastOfNorthDegrees);
+		float delta = normalize(bearingToAsEastOfNorthDegrees - azimuth);
 		// Do something with these orientation angles.
 		/*
 		text.setText(
@@ -142,8 +142,8 @@ public class Display {
 				);
 		*/
 		final String deltaString = 0 == delta ? "" : 
-			delta > 0 ? (" left " + roundTenths(delta)) 
-					: (" right " + roundTenths(Math.abs(delta)));
+			delta > 0 ? (" right " + roundTenths(delta)) 
+					: (" left " + roundTenths(Math.abs(delta)));
 		text.setText(roundTenths(azimuth) + "° " + deltaString+ "°");
 				
 		leftIndicator.setVisibility(View.GONE);

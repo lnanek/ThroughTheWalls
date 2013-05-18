@@ -45,12 +45,12 @@ public class MainActivity extends Activity implements SensorEventListener,
 		mOrientation = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
 		mDisplay = new Display(this);
 
-		mTargets = new LinkedList<Target>();
-		// Use NYC, Beijing as test targets for now.
-		// TODO add cameras, shelters, etc..
 		// TODO sort nearest first
-		mTargets.add(Target.BEIJING);
-		mTargets.add(Target.NYC);
+		// TODO add cameras, shelters, etc..
+		mTargets = Target.CAMERAS;
+		//mTargets = new LinkedList<Target>();
+		//mTargets.add(Target.BEIJING);
+		//mTargets.add(Target.NYC);
 		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
 
 		// TODO use default location as Palo Alto for now.
