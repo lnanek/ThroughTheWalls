@@ -1,5 +1,6 @@
 package com.neatocode.throughwalls;
 
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class Target {
 	
 	public static final List<Target> CAMERAS = new LinkedList<Target>();
 	static {		
+/*		
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d01/m1p70n.htm",-123.762336f, 39.550158f, "SR-1 : Ten Mile River Bridge"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d01/m20p1.htm",-123.807816f, 39.4201f, "SR-20 : At SR-1"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d01/m20p21.htm",-123.369404f, 39.405945f, "SR-20 : West Of US-101"));
@@ -113,6 +115,7 @@ public class Target {
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d02/wilcoxrdsb.htm",-122.25203f, 40.21932f, "Wilcox Rd SB"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d02/sundialbridge.htm",-122.37879f, 40.58683f, "Sundial Bridge"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d02/southbonnyview.htm",-122.35132f, 40.53828f, "South Bonnyview"));
+*/
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d03/Florin_I5.htm",-121.51647f, 38.495353f, "Florin Road"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d03/Gloria_I5.htm",-121.522427f, 38.509961f, "Gloria Drive", "http://video.dot.ca.gov/asx/d3-gloria-i5.asx"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d03/43rd_I5.htm",-121.52178f, 38.516437f, "43rd Avenue ", "http://video.dot.ca.gov/asx/d3-43rd-i5.asx"));
@@ -217,6 +220,7 @@ public class Target {
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d03/Northgate_CMS_80.htm",-121.488638f, 38.639527f, "Northgate"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d03/Blue_Oaks_65.htm",-121.298418f, 38.796599f, "Blue Oaks"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d03/Main_32_Chico.htm",-121.834856f, 39.725615f, "Chico"));
+	/*
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d04/TVF02_N680AT580.htm",-121.740625f, 37.703037f, "NB I-680 at I-580"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d04/TV102_W580atJCT24.htm",-122.272895f, 37.825383f, "W580 JWO 24 IC"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d04/E80atPowell.htm",-122.293684f, 37.832578f, "EB I-80 at 80/580/880 IC", "http://video/asx/E80atPowell.asx"));
@@ -882,6 +886,15 @@ public class Target {
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212965.htm",-117.672522f, 33.548579f, "AVERY PKWY"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212799.htm",-117.831263f, 33.802192f, "COLLINS"));
 				CAMERAS.add(new Target("http://www.dot.ca.gov/research/its/cctv/d12/1212800.htm",-117.831626f, 33.809669f, "KATELLA AVE"));		
+*/
+	}
+	
+	public static String getImageUrlFromD2(final String url) {
+		int idStartIndex = url.lastIndexOf('/');
+		int idEndIndex = url.lastIndexOf(".");
+		String id = url.substring(idStartIndex, idEndIndex);
+		String result = "http://www.dot.ca.gov/cwwp2/data/d3/cctv/image/" + id + ".jpg?" + new Date().getTime();
+		return result;
 	}
 	
 	double lat;

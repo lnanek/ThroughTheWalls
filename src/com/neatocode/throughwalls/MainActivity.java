@@ -1,6 +1,5 @@
 package com.neatocode.throughwalls;
 
-import java.util.LinkedList;
 import java.util.List;
 
 import android.app.Activity;
@@ -90,7 +89,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 		if (!mDisplay.isWebViewVisible()) {
 			final Target currentTarget = mTargets.get(mCurrentTargetIndex);
 			if (null != currentTarget.url) {
-				mDisplay.showUrl(currentTarget.url);
+				mDisplay.showUrl(Target.getImageUrlFromD2(currentTarget.url));
 			}
 			return true;
 		}

@@ -66,7 +66,7 @@ public class Display {
 		view = (WebView) aActivity.findViewById(R.id.web);
 		WebSettings webSettings = view.getSettings();
 		webSettings.setJavaScriptEnabled(true);
-		view.setInitialScale(75);
+		//view.setInitialScale(75);
 		view.setFocusable(false);
 		view.setFocusableInTouchMode(false);
 		view.setClickable(false);
