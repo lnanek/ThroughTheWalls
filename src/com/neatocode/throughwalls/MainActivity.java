@@ -14,11 +14,12 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 
 public class MainActivity extends Activity implements SensorEventListener,
 		LocationListener {
-	
+
 	private static final String LOG_TAG = "ThroughWalls";
 
 	private SensorManager mSensorManager;
@@ -26,20 +27,21 @@ public class MainActivity extends Activity implements SensorEventListener,
 	private Sensor mOrientation;
 
 	private LocationManager mLocationManager;
-	
+
 	private Display mDisplay;
-	
+
 	private List<Target> mTargets;
-	
+
 	private int mCurrentTargetIndex;
-	
+
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);	
+		super.onCreate(savedInstanceState);
 
 		mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-		// TODO supposed to be more accurate to compose compass and accelerometer yourself
+		// TODO supposed to be more accurate to compose compass and
+		// accelerometer yourself
 		mOrientation = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
 		mDisplay = new Display(this);
 
@@ -50,7 +52,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 		mTargets.add(Target.BEIJING);
 		mTargets.add(Target.NYC);
 		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
-		
+
 		// TODO use default location as Palo Alto for now.
 		mDisplay.setLocation(Target.PALO_ALTO.asLocation());
 	}
@@ -58,16 +60,48 @@ public class MainActivity extends Activity implements SensorEventListener,
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 
-		if ( event.getAction() == MotionEvent.ACTION_DOWN ) {
-			mCurrentTargetIndex++;
-			if ( mCurrentTargetIndex >= mTargets.size() ) {
-				mCurrentTargetIndex = 0;
-			}
-			mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+		if (event.getAction() == MotionEvent.ACTION_DOWN) {
+			nextTarget();
 			return true;
 		}
-		
+
 		return super.onTouchEvent(event);
+	}
+	
+	private void nextTarget() {
+		mCurrentTargetIndex++;
+		if (mCurrentTargetIndex >= mTargets.size()) {
+			mCurrentTargetIndex = 0;
+		}
+		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+	}
+	
+	private void previousTarget() {
+		mCurrentTargetIndex--;
+		if (mCurrentTargetIndex < 0) {
+			mCurrentTargetIndex = mTargets.size() - 1;
+		}
+		mDisplay.setTarget(mTargets.get(mCurrentTargetIndex));
+	}
+
+	@Override
+	public boolean dispatchKeyEvent(KeyEvent event) {
+		int action = event.getAction();
+		int keyCode = event.getKeyCode();
+		switch (keyCode) {
+		case KeyEvent.KEYCODE_VOLUME_UP:
+			if (action == KeyEvent.ACTION_UP) {
+				nextTarget();
+			}
+			return true;
+		case KeyEvent.KEYCODE_VOLUME_DOWN:
+			if (action == KeyEvent.ACTION_DOWN) {
+				previousTarget();
+			}
+			return true;
+		default:
+			return super.dispatchKeyEvent(event);
+		}
 	}
 
 	@Override
@@ -81,17 +115,21 @@ public class MainActivity extends Activity implements SensorEventListener,
 		mSensorManager.registerListener(this, mOrientation,
 				SensorManager.SENSOR_DELAY_NORMAL);
 		final List<String> providers = mLocationManager.getAllProviders();
-		for(String provider : providers ) {
+		for (String provider : providers) {
 			// Set last known location if we have it.
 			// TODO indicate to user if very out of date?
-			// Time label in corner? some sort of scanner ping lines moving outward?		
-			final Location lastKnownLocation = mLocationManager.getLastKnownLocation(provider);
-			mDisplay.setLocation(lastKnownLocation);			
-			
-			final boolean enabled = mLocationManager.isProviderEnabled(provider);
-			Log.i(LOG_TAG, "Found provider: " + provider + ", enabled = " + enabled);
+			// Time label in corner? some sort of scanner ping lines moving
+			// outward?
+			final Location lastKnownLocation = mLocationManager
+					.getLastKnownLocation(provider);
+			mDisplay.setLocation(lastKnownLocation);
+
+			final boolean enabled = mLocationManager
+					.isProviderEnabled(provider);
+			Log.i(LOG_TAG, "Found provider: " + provider + ", enabled = "
+					+ enabled);
 			mLocationManager.requestLocationUpdates(provider, 0, 0, this);
-		}		
+		}
 	}
 
 	@Override
@@ -108,7 +146,7 @@ public class MainActivity extends Activity implements SensorEventListener,
 		float roll_angle = event.values[2];
 		mDisplay.setOrientation(azimuth_angle, pitch_angle, roll_angle);
 	}
-	
+
 	@Override
 	public void onLocationChanged(final Location location) {
 		mDisplay.setLocation(location);
@@ -124,7 +162,8 @@ public class MainActivity extends Activity implements SensorEventListener,
 	}
 
 	@Override
-	public void onStatusChanged(final String provider, final int status, final Bundle extras) {
+	public void onStatusChanged(final String provider, final int status,
+			final Bundle extras) {
 	}
 
 }

@@ -5,7 +5,7 @@ import android.location.Location;
 public class Target {
 
 	public static final Target BEIJING = 
-			new Target(37.39771f, -122.049694, "Beijing");
+			new Target(37.39771f, -122.049694f, "Beijing");
 	
 	public static final Target NYC = 
 			new Target(40.729568f, -73.982277f, "NYC");

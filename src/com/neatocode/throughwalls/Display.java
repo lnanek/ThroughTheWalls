@@ -83,8 +83,6 @@ public class Display {
 		}
 
 		target = aTarget;
-		//locationText.setText(location.getLatitude() + "\n"
-		//		+ location.getLongitude());
 		locationText.setText(aTarget.name);
 		updateDisplay();
 	}
@@ -143,7 +141,9 @@ public class Display {
 				+ "d = " + delta
 				);
 		*/
-		final String deltaString = delta >= 0 ? ("+" + roundTenths(delta)) : roundTenths(delta);
+		final String deltaString = 0 == delta ? "" : 
+			delta > 0 ? (" left " + roundTenths(delta)) 
+					: (" right " + roundTenths(Math.abs(delta)));
 		text.setText(roundTenths(azimuth) + "° " + deltaString+ "°");
 				
 		leftIndicator.setVisibility(View.GONE);
@@ -152,8 +152,8 @@ public class Display {
 		//frame.setBackgroundColor(Color.GREEN);
 		
 		// Indicator is on screen at a certain offset.
-		if ( Math.abs(delta) < SCREEN_WIDTH_DEGREES) {
-			indicator.setIndicatorOffset(delta/SCREEN_WIDTH_DEGREES);
+		if ( Math.abs(delta) < (SCREEN_WIDTH_DEGREES/2)) {
+			indicator.setIndicatorOffset(delta/SCREEN_WIDTH_DEGREES + 0.5f);
 			//frame.setBackgroundColor(Color.RED);
 		// Indicator is offscreen.
 		} else if ( delta < 0 ) {
@@ -161,6 +161,9 @@ public class Display {
 		} else if ( delta > 0 ) {
 			rightIndicator.setVisibility(View.VISIBLE);
 		}
+		
+		//final float distanceM = currentLocation.distanceTo(targetLocation);
+		//locationText.setText(target.name + " (" + Math.round(distanceM) + "m)");
 	}
 	
 	private String roundTenths(float input) {
