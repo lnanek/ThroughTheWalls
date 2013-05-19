@@ -87,7 +87,7 @@ public class TargetFinderActivity extends Activity implements
 		// TODO add cameras, shelters, etc..
 
 		mTargetListIndex = getIntent().getIntExtra(TARGET_INDEX_EXTRA, 0);
-		if (mTargetListIndex < 1) {
+		if (mTargetListIndex <= 1) {
 			mTargets = Target.TARGET_LISTS.get(mTargetListIndex);
 			mDisplay.showTarget(mTargets.get(mTargetIndex));
 		}

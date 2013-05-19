@@ -42,7 +42,7 @@ public class OffsetIndicatorView extends View {
 	}
 	
 	public void setIndicatorDrawable(final Integer drawableId) {
-		if ( null == drawableId ) {
+		if ( null == drawableId || 0 == drawableId) {
 			mIndicator = getContext().getResources().getDrawable(R.drawable.marker_camera);			
 			return;
 		}

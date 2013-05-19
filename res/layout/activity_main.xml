@@ -16,6 +16,16 @@
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    
+    <WebView
+        android:id="@+id/indicator_web"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_marginLeft="-40px"
+        android:layout_gravity="left"
+        android:background="#000"
+        android:visibility="gone" 
+        />    
 
     <LinearLayout
         android:layout_width="match_parent"

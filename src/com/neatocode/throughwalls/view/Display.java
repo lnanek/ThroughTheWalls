@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,6 +55,8 @@ public class Display {
 	private TargetFinderActivity mActivity;
 	
 	private boolean isWebViewVisible;
+	
+	private WebView webIndicator;
 
 	public Display(final TargetFinderActivity aActivity) {
 		mActivity = aActivity;
@@ -67,6 +70,8 @@ public class Display {
 		leftIndicator= (View) aActivity.findViewById(R.id.leftIndicator);
 		rightIndicator= (View) aActivity.findViewById(R.id.rightIndicator);
 		view = (WebView) aActivity.findViewById(R.id.web);
+		webIndicator = (WebView)  aActivity.findViewById(R.id.indicator_web);
+		
 		WebSettings webSettings = view.getSettings();
 		webSettings.setJavaScriptEnabled(true);
 		//view.setInitialScale(75);
@@ -96,6 +101,7 @@ public class Display {
 		view.setVisibility(View.VISIBLE);
 		
 		if ( null != target.url ) {
+			//view.loadUrl(target.url);	
 			view.loadUrl(Target.getImageUrlFromD2(target.url));			
 			return;
 		}
@@ -138,6 +144,9 @@ public class Display {
 
 		target = aTarget;
 		locationText.setText(aTarget.name);
+		if ( null != target.localHtmlIndicator ) {
+			webIndicator.loadUrl(target.localHtmlIndicator);		
+		}
 		updateDisplay();
 	}
 
@@ -204,11 +213,38 @@ public class Display {
 		rightIndicator.setVisibility(View.GONE);
 		indicator.setIndicatorOffset(null);
 		indicator.setIndicatorDrawable(target.indicatorDrawableId);
+		webIndicator.setVisibility(View.GONE);
 		//frame.setBackgroundColor(Color.GREEN);
 		
 		// Indicator is on screen at a certain offset.
 		if ( Math.abs(delta) < (SCREEN_WIDTH_DEGREES/2)) {
 			indicator.setIndicatorOffset(delta/SCREEN_WIDTH_DEGREES + 0.5f);
+			
+			if ( null != target.localHtmlIndicator ) {
+				if (View.VISIBLE != webIndicator.getVisibility()) {
+					webIndicator.setVisibility(View.VISIBLE);
+				}
+				indicator.setVisibility(View.GONE);
+				
+				final int screenWidth = indicator.getWidth();
+				final int indicatorWidth = 140;
+				final int halfIndicatorWidth = indicatorWidth / 2;
+				
+				final float layoutMarginLeft = 10 - halfIndicatorWidth
+						+ (delta/SCREEN_WIDTH_DEGREES + 0.5f) * screenWidth;
+				
+				FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) 
+						webIndicator.getLayoutParams();
+				params.leftMargin = (int) layoutMarginLeft;
+				webIndicator.getParent().requestLayout();
+			}
+			
+			final float distance = currentLocation.distanceTo(targetLocation);
+			
+			locationText.setText(target.name + " (" + Math.round(distance) + "m)");
+			
+			
+			
 			//frame.setBackgroundColor(Color.RED);
 		// Indicator is offscreen.
 		} else if ( delta < 0 ) {

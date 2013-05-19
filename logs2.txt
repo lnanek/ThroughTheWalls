@@ -1,0 +1,68 @@
+--------- beginning of /dev/log/main
+E/org.doubango.ngn.services.impl.NgnSipService(26193): ========= Incoming Message ========
+E/org.doubango.ngn.services.impl.NgnSipService(26193): 2013-05-18 16:26:45
+E/org.doubango.ngn.services.impl.NgnSipService(26193): INVITE sip:+16307180881@10.17.36.236:45754;transport=tcp SIP/2.0
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Via: SIP/2.0/TCP 192.11.69.144:5060;branch=z9hG4bKqoeb0c00ag5gghgvc0a1.1
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Call-ID: LU-1368919608444236-1059@imsgroup0-000.ims.demo.alcatel-lucent.com
+E/org.doubango.ngn.services.impl.NgnSipService(26193): To: <sip:+16307180881@ims.demo.alcatel-lucent.com>
+E/org.doubango.ngn.services.impl.NgnSipService(26193): From: "6302706807" <sip:+16302706807@ims.demo.alcatel-lucent.com>;tag=5193b846-51980e381a7a9080-gm-pt-lucentPCSF-002120
+E/org.doubango.ngn.services.impl.NgnSipService(26193): CSeq: 1 INVITE
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Accept-Contact: *;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel"
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Allow: INVITE,BYE,REGISTER,ACK,OPTIONS,CANCEL,SUBSCRIBE,NOTIFY,INFO,REFER,UPDATE
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Contact: <sip:SD7ln57-vv9pmjnijps78tagc9s461k0vcqv52j0mrvclpvms7a7uttaulde6g7teebpf8481tfvu6mlv7fim792f61jv0vj1vnhf57jvkvj373010721@192.11.69.144:5060;encoded-parm=QbkRBthOEgsTXgkTBA0HHiUrKz1CQEBFRkRGNgQMGAlsMTcgK2ghOyAnOCs.ITogYX9jZGV4PjUqdFVXXlsbV1tbWERLQkwOFgcACBNGCgUGVlheWUA_;ue-addr=pcsf-stdn.imsgroup0-000.ims.demo.alcatel-lucent.com;transport=tcp>;+g.oma.sip-im;language="en,fr";+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel"
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Content-Type: application/sdp
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Max-Forwards: 67
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Privacy: none
+E/org.doubango.ngn.services.impl.NgnSipService(26193): P-Access-Network-Info: PANI
+E/org.doubango.ngn.services.impl.NgnSipService(26193): P-Asserted-Identity: "6302706807" <sip:+16302706807@ims.demo.alcatel-lucent.com>
+E/org.doubango.ngn.services.impl.NgnSipService(26193): P-Asserted-Identity: "6302706807" <tel:+16302706807>
+E/org.doubango.ngn.services.impl.NgnSipService(26193): P-Called-Party-ID: <sip:+16307180881@ims.demo.alcatel-lucent.com;user=phone>
+E/org.doubango.ngn.services.impl.NgnSipService(26193): User-Agent: IM-client/OMA1.0 ios-ngn-stack/EasyCall v873 (iPad i
+I/LocationSyncHandler( 6229): Starting sync. Last successful sync was 1172 sec ago.
+I/LocationSyncHandler( 6229): Location found, age: -24618511 ms. Reporting.
+D/ServerConstants( 6229): https://clients2.google.com/glass
+D/dalvikvm(  177): GC_CONCURRENT freed 690K, 11% free 13178K/14791K, paused 4ms+10ms
+I/LocationSyncHandler( 6229): Successfully reported location.
+D/UserEventHelper( 6229): Logging user event [action=PROTO_REQUEST_DISPATCHER_REQUEST_SIZE, data=|p=loc|breq=70|bres=2|].
+D/UserEventHelper( 6229): Logging user event [action=PROTO_REQUEST_DISPATCHER_BATCH, data=|r=1|breq=70|bres=6|l=535|e=0|].
+D/OpenGLRenderer( 6229): Flushing caches (mode 1)
+V/BatteryHelper(  643): Battery currently charging? true
+I/BatteryHelper(  643): Driver is not reporting charged, checking percent.
+V/BatteryHelper(  643): Current battery percent: 97.0
+V/BatteryHelper(  643): Battery is charged? true
+V/BatteryHelper(  643): Battery currently charging? true
+I/BatteryHelper(  643): Driver is not reporting charged, checking percent.
+V/BatteryHelper(  643): Current battery percent: 97.0
+V/BatteryHelper(  643): Battery is charged? true
+V/bluez   (  583): external/bluetooth/bluez/plugins/hciops.c:hciops_set_discoverable() hci0 discoverable 0
+V/bluez   (  583): external/bluetooth/bluez/src/adapter.c:set_mode() connectable
+V/bluez   (  583): external/bluetooth/bluez/plugins/hciops.c:read_scan_complete() hci0 status 0
+V/bluez   (  583): external/bluetooth/bluez/src/adapter.c:adapter_mode_changed() old 0x03 new 0x02
+V/bluez   (  583): external/bluetooth/bluez/src/adapter.c:adapter_set_limited_discoverable() FALSE
+V/bluez   (  583): external/bluetooth/bluez/plugins/hciops.c:hciops_set_limited_discoverable() hci0 limited 0
+V/bluez   (  583): external/bluetooth/bluez/src/adapter.c:set_mode_complete() 
+D/BluetoothEventLoop(  177): Property Changed: Discoverable : false
+D/BluetoothAdapterStateMachine(  177): BluetoothOn process message: 53
+E/org.doubango.ngn.services.impl.NgnSipService(26193): ========= Outgoing Message ========
+E/org.doubango.ngn.services.impl.NgnSipService(26193): 2013-05-18 16:26:54
+E/org.doubango.ngn.services.impl.NgnSipService(26193): REGISTER sip:ims.demo.alcatel-lucent.com SIP/2.0
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Via: SIP/2.0/TCP 10.17.36.236:45754;branch=z9hG4bK1510283630;rport
+E/org.doubango.ngn.services.impl.NgnSipService(26193): From: <sip:+16307180881@ims.demo.alcatel-lucent.com>;tag=1780655977
+E/org.doubango.ngn.services.impl.NgnSipService(26193): To: <sip:+16307180881@ims.demo.alcatel-lucent.com>
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Contact: <sip:+16307180881@10.17.36.236:45754;transport=tcp>;expires=1700;+g.oma.sip-im;language="en,fr";+g.3gpp.smsip;+g.oma.sip-im.large-message;audio;+g.3gpp.icsi-ref="urn%3Aurn-7%3A3gpp-application.ims.iari.gsma-vs";+g.3gpp.cs-voice
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Call-ID: 49634935-0805-ff8d-b9cc-baad210733f4
+E/org.doubango.ngn.services.impl.NgnSipService(26193): CSeq: 578622716 REGISTER
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Content-Length: 0
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Max-Forwards: 70
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Authorization: Digest username="6307180881",realm="ims.demo.alcatel-lucent.com",nonce="b7c9036dbf3054aea940e970351980e14dc8f84c2508",uri="sip:ims.demo.alcatel-lucent.com",response="e1af518e8609e9784cf6672df98ebc71",algorithm=MD5,cnonce="01e8addd7dffa119dcd74a335c14836d",opaque="ALU:QbkRBthOEgEQAkgVEwwHRAIBHgkdHwQCQ1lFRkdWEBcybCchKClpKSUpKjgoImI8JDE2OiF4NDc0YAQCBAQ_",qop=auth,nc=00000002
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Allow: INVITE, ACK, CANCEL, BYE, MESSAGE, OPTIONS, NOTIFY, PRACK, UPDATE, REFER
+E/org.doubango.ngn.services.impl.NgnSipService(26193): Privacy: none
+E/org.doubango.ngn.services.impl.NgnSipService(26193): P-Access-Network-Info: ADSL;utran-cell-id-3gpp=00000000
+E/org.doubango.ngn.services.impl.NgnSipService(26193): User-Agent: IM-client/OMA1.0 easyCall.873/v873 (Glass 1 glass-1)
+E/org.doubango.ngn.services.impl.NgnSipService(26193): P-Preferred-Identity: <sip:+16307180881@ims.demo.alcatel-lucent.com>
+E/org.doubango.ngn.services.impl.NgnSipService(26193): 
+E/org.doubango.ngn.services.impl.NgnSipService(26193): 
+D/org.doubango.ngn.services.impl.NgnSipService(26193): OnDialogEvent ((un)REGISTER request successfully sent.,1)
+--------- beginning of /dev/log/system
+W/ProcessStats(  177): Skipping unknown process pid 26656
+W/ThrottleService(  177): unable to find stats for iface rmnet0

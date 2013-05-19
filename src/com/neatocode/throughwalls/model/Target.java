@@ -34,6 +34,8 @@ public class Target {
 	public String url;
 	
 	public String description;
+	
+	public String localHtmlIndicator;
 
 	public Target(String url, double lon, double lat, String name) {
 		this.url = url;

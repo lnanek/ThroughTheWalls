@@ -1,8 +1,11 @@
 
+* {
+	background-color:black;
+}
+
 img {
 position: relative; top: 0px; left: 0px;
 
-background-color:white;
 background-image:
   -webkit-radial-gradient(red 4px, transparent 48px),
   -webkit-repeating-linear-gradient(45deg, red 2px,  green 4px, yellow 8px, blue 12px,
@@ -13,7 +16,7 @@ background-image:
                                     transparent 28px, transparent 32px),
   -webkit-radial-gradient(blue 8px, transparent 68px);
 
-background-size: 120px 120px, 4px 4px;
+
 background-position: 0 0;
 -webkit-box-shadow:  10px 10px 10px #800;
 }
