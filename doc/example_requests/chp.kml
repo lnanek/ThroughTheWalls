@@ -1,0 +1,1125 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>CHP Incidents</name>
+    <Style id="incident">
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <IconStyle><Icon>
+        <href>http://quickmap.dot.ca.gov/img/incident-32x32.png</href>
+        <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+      </Icon></IconStyle>
+    </Style>
+    <Style id="emergency">
+      <IconStyle><Icon>
+        <href>http://quickmap.dot.ca.gov/img/emergency.png</href>
+        <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+      </Icon></IconStyle>
+    </Style>
+    <Placemark>
+      <name>CHP Incident 130518SA00848</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:19PM <br> 1182-Trfc Collision-No Inj <br> Starfire Dr / Caldera Way </p>
+        <p align="left">May 18 2013 12:21PM [2] NEG 1125<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.362021,38.557817,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00840</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:16PM <br> ANIMAL-Live or Dead Animal <br> Main St / Cr85 </p>
+        <p align="left">May 18 2013 12:19PM [2] 1039 A/C <br />May 18 2013 12:17PM [1] LOOSE HORSE RUNNING UP/DOWN SIDE OF RDWY<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.04847,38.707346,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00772</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:43AM <br> 1183-Trfc Collision-Unkn Inj <br> Mount Olive Rd / Dog Bar Rd </p>
+        <p align="left">May 18 2013 12:32PM [8] A42-003  1 MILE JEO DOG BAR ON MT OLIVE//NARROW RD//1185//40 FT DWN STEEP EMBANKMENT<br />May 18 2013 11:44AM [2] TRK WENT OFF RDWY INTO EMBANKMENT<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.018317,39.134814,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00759</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:37AM <br> 1179-Trfc Collision-1141 Enrt <br> I5 N / Jso Sutterville Rd </p>
+        <p align="left">May 18 2013 12:05PM [25] [Notification] [CHP]-PER TMT3 SIG NOT NEEDED - TRAFFIC FLOWING - CMS ACTIVATED AT LAGUNA [Shared]<br />May 18 2013 11:58AM [23] [Notification] [CHP]-1039 3A / CALL #2817 / NATOMAS TOW ENRT [Shared]<br />May 18 2013 11:56AM [22] 1039 JOHNNIES FOR ONE AND LL W/3A NOW [Shared]<br />May 18 2013 11:54AM [21] 112-108 MAKE JUST ONE TOW REG AND 2ND 3A PLS  [Shared]<br />May 18 2013 11:51AM [20] [Rotation Request Comment] 1039 JOHNNIES W/2  916-428-7200 [Shared]<br />May 18 2013 11:49AM [19] B112-108  1185 X2 [Shared]<br />May 18 2013 11:48AM [18] B112-108  97 PART BLOCK #4 NB 5 JNO GLORIA [Shared]<br />May 18 2013 11:48AM [17] [Notification] [CHP]-PER FIRE JSO SUTTERVILLE IN THE #4 LANE  [Shared]<br />May 18 2013 11:43AM [14] [Appended, 11:47:06] [7] PER RP DIFFERENT FRM LG 0759<br />May 18 2013 11:42AM [13] [Appended, 11:47:06] [6] XFER SAC FIRE<br />May 18 2013 11:42AM [11] [Appended, 11:47:06] [4] CORRECTION - VEH IS IN SLW LN<br />May 18 2013 11:42AM [8] [Appended, 11:47:06] [1] SMALL SIL TOYT  ON RHS<br />May 18 2013 11:38AM [4] XFR SAC FIRE <br />May 18 2013 11:38AM [2] BLKG #2 <br />May 18 2013 11:38AM [1] WHI HATCHBACK VS TEAL SD<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.514374,38.537039,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00753</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:34AM <br> ANIMAL-Live or Dead Animal <br> SR14 S / W Avenue A </p>
+        <p align="left">May 18 2013 11:34AM [5] [5] [Notification] [CHP]-[1] REDDISH MED SIZE DOG RUNNING IN LANES<br />May 18 2013 11:08AM [1] [1] REDDISH MED SIZE DOG RUNNING IN LANES<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.170601,34.820496,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00712</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:13AM <br> 1181-Trfc Collision-Minor Inj <br> Val Verde Rd / Dick Cook Rd </p>
+        <p align="left">May 18 2013 11:35AM [14] [Rotation Request Comment] 1039 TRACKER AUTO 916-660-0424 W/2<br />May 18 2013 11:33AM [12] A45-281  RDWY BLOCKED<br />May 18 2013 11:18AM [9] 1039 FIRE - AFFIRM // DPTY NW 97 WILL ADVS FURTHER <br />May 18 2013 11:18AM [8] 45-281 HEARD OVER FIRE THIS IS HEAD-ON TC <br />May 18 2013 11:15AM [2] NGE 1125 // TRYING TO MOVE TO RHS<br />May 18 2013 11:14AM [1] BLU HOND ACC VS TAN HOND CIVIC<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.164074,38.796168,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00623</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 10:37AM <br> 1182-Trfc Collision-No Inj <br> Orange Grove Ave / Auburn Blvd </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.360801,38.647492,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SA00334</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  5:57AM <br> MZP-Assist CT with Maintenance <br> 6 Massie Ct </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.419962,38.475736,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518HM00073</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:18PM <br> 1182-Trfc Collision-No Inj <br> 2500 Cypress St </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-124.140375,40.765902,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518YK00263</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:15PM <br> 1125-Traffic Hazard <br> I5 N / S Weed </p>
+        <p align="left">May 18 2013 12:22PM [4] 1039 BLK BUTTE - NEED TO KNOW COMPANY NAME<br />May 18 2013 12:19PM [3] 1039 RAMSHAWS - UNABLE TO HANDLE<br />May 18 2013 12:15PM [1] BIG RIG BLOCKING #2 OOG 1185 FOR FUEL ONLY<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.379611,41.396472,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518YK00236</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:05AM <br> 1125-Traffic Hazard <br> SR139 / State Line Rd </p>
+        <p align="left">May 18 2013 11:43AM [8] A41-045  OSP IS NOT 1097 YET<br />May 18 2013 11:08AM [6] 1039 OSP<br />May 18 2013 11:07AM [5] 1039 ACE TOW<br />May 18 2013 11:05AM [2] REQ 1185 //ACE TOW<br />May 18 2013 11:05AM [1] ,36'  MH SATURN TRANS 1185 ACE TWO<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.519457,41.998263,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01268</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1183-Trfc Collision-Unkn Inj <br> I80 E / I80 E Powell St Onr </p>
+        <p align="left">May 18 2013 12:30PM [4] 1039 BRG<br />May 18 2013 12:29PM [3] CORR BLKG 31<br />May 18 2013 12:29PM [1] WHI FORD TAURUS VS UNK<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.297042,37.841363,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01266</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1125-Traffic Hazard <br> Sr24 W / Sr24 W Saint Stephens Dr Ofr </p>
+        <p align="left">May 18 2013 12:29PM [1] WOODEN PALLET IN #4<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.166865,37.892846,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01269</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1125A-Animal Hazard <br> Pleasants Valley Rd / Cherry Glen Rd </p>
+        <p align="left">May 18 2013 12:29PM [2] LRG STEER IN RDWAY<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.024694,38.336235,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01258</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1179-Trfc Collision-1141 Enrt <br> Us101 N / Us101 N Hellyer Ave Ofr </p>
+        <p align="left">May 18 2013 12:31PM [16] PER ANOTHER A LOT OF PEOPLE PULLED OVER ON THE RHS TRYING TO HELP <br />May 18 2013 12:31PM [14] [Rotation Request Comment] 1039 DandM TOW 408-578-1534 SD 798****<br />May 18 2013 12:30PM [12] PER RP VEH STOPPING TO HELP / UNK # OF PRTYS HELPING <br />May 18 2013 12:30PM [11] 10-39 11-41<br />May 18 2013 12:29PM [6] VEH ON RHS <br />May 18 2013 12:28PM [4] [Appended, 12:28:42] DGRN MINIVAN OT - ON ITS ROOF ON RHS IN DITCH<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.806308,37.278774,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01257</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:27PM <br> 1179-Trfc Collision-1141 Enrt <br> 18201 Marsh Creek Rd </p>
+        <p align="left">May 18 2013 12:32PM [16] 1021 RP TO COCO FIRE / NEG ANSWER <br />May 18 2013 12:31PM [13] 1039 AQUA/KHAKI -- 118-66M C4 <br />May 18 2013 12:31PM [12] TRYING TO LL W/RP TO COCO FIRE TO GET FURTHER INFO <br />May 18 2013 12:29PM [8] COCO FIRE HAS ONLY REC'D 1 CALL AT THIS TIME <br />May 18 2013 12:28PM [4] COCO FIRE HAS 1141/FIRE AND MEDIC AIR ENRT <br />May 18 2013 12:28PM [1] COCO FIRE GETTING CALL THAT CHP MOTOR UNIT HAS BEEN HIT BY A VEH<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.773482,37.880013,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01264</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:27PM <br> 20002-Hit and Run No Injuries <br> Camino A Los Cerros / Montana Ln </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.206474,37.43908,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01247</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:21PM <br> 1125-Traffic Hazard <br> I680 N / I680 N Willow Pass Rd Ofr </p>
+        <p align="left">May 18 2013 12:21PM [1] BIG POT HOLE IN # 4 LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.053879,37.962458,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01241</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:18PM <br> FIRE-Report of Fire <br> N Claremont Ave / Mckee Rd </p>
+        <p align="left">May 18 2013 12:20PM [5] FIRE ENRT<br />May 18 2013 12:19PM [4] XFER FIRE<br />May 18 2013 12:19PM [3] SHED ON FIRE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.830992,37.378179,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01213</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:09PM <br> 1125-Traffic Hazard <br> Sr237 W / Us101 N Sr237 W Con </p>
+        <p align="left">May 18 2013 12:10PM [1] LADDER IN #1<br />May 18 2013 12:09PM [3] [1] LADDER IN LN 1<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.035397,37.400839,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01191</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:04PM <br> 1183-Trfc Collision-Unkn Inj <br> Sr242 N / Sr242 N Clayton Rd Ofr </p>
+        <p align="left">May 18 2013 12:21PM [28] [Rotation Request Comment] 1039 BAY POINT TOW ***925-682-5920*** SD 220<br />May 18 2013 12:16PM [25] A19-683A  ALL ON RHS -- RDWY OPENJ<br />May 18 2013 12:14PM [22] [Notification] [CHP]-[18] WIT- ADV TC CAUSED BY TIRE TREAD PLT AZ AB42750<br />May 18 2013 12:12PM [18] WIT- ADV TC CAUSED BY TIRE TREAD PLT AZ AB42750<br />May 18 2013 12:06PM [13] [3] DEBRI IN RDWY<br />May 18 2013 12:06PM [12] [2] UNK IF BLKG<br />May 18 2013 12:05PM [5] [1] WHI VAN VS GRN PKTK // #1 LN<br />May 18 2013 12:05PM [2] BLKG CD AND LN 1<br />May 18 2013 12:05PM [1] 2 VEH TC<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.048744,37.96661,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01186</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:02PM <br> 20001-Hit and Run w/Injuries <br> Trinity Rd / Sr12 </p>
+        <p align="left">May 18 2013 12:08PM [13] A21-005  CPS Z17 TRAFFIC<br />May 18 2013 12:04PM [8] BIKES ON RHS <br />May 18 2013 12:04PM [7] CHP AT THE BOTTOM OF TRINITY PER RP <br />May 18 2013 12:03PM [3] BICYCLIST VS TRLR<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.514305,38.379389,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01115</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:39AM <br> 1125-Traffic Hazard <br> I680 S / I580 I680 S Con </p>
+        <p align="left">May 18 2013 11:39AM [2] BLKING CON RAMP<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.921082,37.696595,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01066</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:20AM <br> 1125-Traffic Hazard <br> I580 E / I580 E Grant Line Rd Ofr </p>
+        <p align="left">May 18 2013 12:23PM [13] 1185 ADV ETA WILL BE 8-10 MIN [Shared]<br />May 18 2013 11:30AM [8] [Appended, 11:32:18] [1] BIG RIG OO DIESEL// IN #4 [Shared]<br />May 18 2013 11:27AM [6] PER ANOTHER / SEMI TK ON BLIND CURVE [Shared]<br />May 18 2013 11:23AM [2] [Appended, 11:25:25] [1] BIG RIG FB BLKG #4<br />May 18 2013 11:21AM [1] SEMI TK BLKG SLOW LANE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.59082,37.739335,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG01012</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:03AM <br> 1179-Trfc Collision-1141 Enrt <br> I580 W / I580 W 35TH AVE ONR </p>
+        <p align="left">May 18 2013 11:25AM [22] 1039 1185R / ADV'D LINE 21 [Shared]<br />May 18 2013 11:25AM [21] RDWY CLR / MOVED TO RHS  [Shared]<br />May 18 2013 11:21AM [19] PER 24 / WILL NEED A FLTBD / 1039 1185R  [Shared]<br />May 18 2013 11:20AM [18] [Rotation Request Comment] 1039 J AND B TOW / ETA 20 ON EXP  **  510-430-8943 , SD 492 [Shared]<br />May 18 2013 11:17AM [14] PER 24 / FIRE IS 97 [Shared]<br />May 18 2013 11:16AM [13] VEH IN THE CD / PER 53 [Shared]<br />May 18 2013 11:04AM [3] NOW FACING WWAY IN CD<br />May 18 2013 11:04AM [2] SOLO SPINOUT<br />May 18 2013 11:04AM [1] BLU UNK MINIVAN - SOLO VEH TC<br />May 18 2013 11:04AM [7] [Appended, 11:06:02] [3] HIT CD AND BLKG #1<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.205552,37.79423,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG00918</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 10:35AM <br> 1183-Trfc Collision-Unkn Inj <br> I680 N / Sr24 E I680 N Con </p>
+        <p align="left">May 18 2013 10:56AM [37] 1039 1185 TO ADV UPDATED 1020 [Shared]<br />May 18 2013 10:49AM [32] [Appended, 10:51:49] [1] GRY SD PARTIALLY IN #1 [Shared]<br />May 18 2013 10:48AM [21] 241: VIS NB JSO STONE VALLEY OFR - IN CD AND  PARTIALLY BLKG #1<br />May 18 2013 10:48AM [39] [Appended, 10:59:06] [2] VEH TIRE BLKG # 1 LN [Shared]<br />May 18 2013 10:47AM [38] [Appended, 10:59:06] [1] DARK SD IN CD [Shared]<br />May 18 2013 10:44AM [25] [Appended, 10:48:55] [4] [Appended, 10:45:23] PART BLKG LN 1<br />May 18 2013 10:44AM [22] [Appended, 10:48:55] [1] BLU TOYT PRIUS OR SIM IN #2 OR 3<br />May 18 2013 10:42AM [17] [Rotation Request Comment] 1039 BAY POINT *SD 220* / 925-682-5920<br />May 18 2013 10:40AM [16] REQ 1185<br />May 18 2013 10:40AM [15] PER RP / THEY HAV A PICTURE OF SV IF NEEDED<br />May 18 2013 10:39AM [13] PER RP SUSP GO INTO WHI VEH AND BEGAN TO CHANGE CLOTHING<br />May 18 2013 10:37AM [8] SV 29 CLR 99 TOYT 4D OO CONCORD<br />May 18 2013 10:36AM [5] GRY SD -VS- CD<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.069808,37.903398,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG00470</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  5:32AM <br> 1179-Trfc Collision-1141 Enrt <br> I580 E / I580 E Eden Canyon Rd Ofr </p>
+        <p align="left">May 18 2013 10:54AM [51] 1039 143-OIC 1021 INFO FOR STOCK COMM<br />May 18 2013  6:56AM [40] 1039 MEYERS LINE 39<br />May 18 2013  6:45AM [36] A143-580  ALL LANES OPEN<br />May 18 2013  6:30AM [34] C143-031  #3 OPEN<br />May 18 2013  6:26AM [32] C143-031  #1,2 LNS NOW OPEN<br />May 18 2013  5:40AM [14] RP ADV ARAB MALE PTY INV IN TC LEFT SCENE IN HIS TRK<br />May 18 2013  5:39AM [12] [Rotation Request Comment] 1039 MYERS TOW 510-782-1185 W/A FB (SD 131)<br />May 18 2013  5:35AM [9] [Notification] [CHP]-PER INVD PTY ALSO ADVD *** EB JWO CVB *** RP'S VEH GRN HYUN ELANTRA VS GRY UTIL TKPK (#2) <br />May 18 2013  5:33AM [4] 1039 1141 <br />May 18 2013  5:32AM [2] TK PK IN MIDDLE LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.026831,37.700865,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518GG00007</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:02AM <br> TADV-Traffic Advisory <br> 111 Grand Ave </p>
+        <p align="left">May 18 2013 12:02PM [3] ^^^SFOBB - THE METERING LIGHTS HAVE BEEN TURNED ON<br />May 18 2013  2:07AM [2] ^ CANCEL HIGH WIND FOR THE BAY BRIDGE<br />May 18 2013 12:38AM [1] ^ HIGH WINDS ON THE BAY BRIDGE LOG 1951<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-122.265032,37.811366,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518SL00127</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:16PM <br> 1125A-Animal Hazard <br> Us101 S / Us101 S San Ramon Rd Ofr </p>
+        <p align="left">May 18 2013 12:20PM [2] DOG IS WALKING NB <br />May 18 2013 12:17PM [1] SMALL DOG WALKING ALONG RHS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-120.705093,35.527267,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518VT00134</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:14PM <br> 1182-Trfc Collision-No Inj <br> Norma Ct / W Loop Dr </p>
+        <p align="left">May 18 2013 12:15PM [1] WHI HONDA ACC VS GRY FORD F150 -  8Z658570<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.043114,34.240446,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518VT00124</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:38AM <br> 20002-Hit and Run No Injuries <br> Us101 N / So Westlake Blvd </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.819594,34.154123,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518VT00099</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 10:38AM <br> 1181-Trfc Collision-Minor Inj <br> Santa Ana Blvd / Santa Ana Rd </p>
+        <p align="left">May 18 2013 11:00AM [12] [Rotation Request Comment] 1039 ADAMSON TOWING 805-646-4494<br />May 18 2013 10:59AM [11] BLKING LNS - REQ 1185 WRECKER FOR SIL SEDAN 50FT O/SIDE <br />May 18 2013 10:42AM [4] 301 ENRT TO ASST FRM 101 AT SEAWARD<br />May 18 2013 10:39AM [2] SILV SD / WHI SMOKE COMING FROM VEH <br />May 18 2013 10:39AM [1] VEH OVER SIDE / SMOKE IN AREA<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.315832,34.399055,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MY00327</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:15AM <br> 1125-Traffic Hazard <br> Elkhorn Rd / Strawberry Canyon Rd </p>
+        <p align="left">May 18 2013 11:38AM [17] FIRE CPT ADVZD HADN'T CALLED THEM OUT<br />May 18 2013 11:38AM [16] [Notification] [CHP]-[15] CO RDS ETA IS 45 MIN<br />May 18 2013 11:38AM [15] CO RDS ETA IS 45 MIN<br />May 18 2013 11:33AM [13] CORDS WILL RECALL W/ETA<br />May 18 2013 11:33AM [11] A27-074  FIRE 97 ON THE WEST SIDE, WILL HAVE THEM HANDLE 1184<br />May 18 2013 11:31AM [10] [Notification] [CHP]-FIRE COMING F/LEWIS RD<br />May 18 2013 11:28AM [8] A27-074  INQ WHAT DIRECTION FIRE COMING FRM , OR ANOTHER UNIT NEEDS TO COME FRM WB SIDE,  CO RDS ON EXPEDITE W/ ETA<br />May 18 2013 11:27AM [7] A27-074  ELKHORN JWO OR JNO WALKER VALLEY, TREE 1125 ENTIRE RDWY, WIRE IS DOWN<br />May 18 2013 11:17AM [4] 1039 FIRE<br />May 18 2013 11:17AM [3] HIT THE POWER LINES AND POWER LINE NOW 5FT OFF GROUND<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.733005,36.829093,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MY00209</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  8:16AM <br> MZP-Assist CT with Maintenance <br> Us101 S / Cannon </p>
+        <p align="left">May 18 2013  8:17AM [2] # 1 LANE WILL BE CLOSED F/ SB 101 @  EB 156 TO CANNON   RD <br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-121.603889,36.859444,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01916</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:30PM <br> 1182-Trfc Collision-No Inj <br> Pico Canyon Rd / Lyons Ave </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.565682,34.378682,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LAFSP00069</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:29PM <br> 1125-Traffic Hazard <br> Us101 W I405 S Con / I405 S </p>
+        <p align="left">May 18 2013 12:29PM [1] [1] WHI SUV #3 LN--[Shared]<br />May 18 2013 12:29PM [6] [1] WHI SUV STALLED IN #3 LANE [Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.469566,34.158943,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01909</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1125-Traffic Hazard <br> Us101 W I405 S Con / I405 S </p>
+        <p align="left">May 18 2013 12:29PM [1] WHI SUV #3 LN--<br />May 18 2013 12:29PM [5] [1] WHI SUV STALLED IN #3 LANE [Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.469566,34.158943,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01895</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:20PM <br> 1182-Trfc Collision-No Inj <br> I5 S / E Washington Blvd </p>
+        <p align="left">May 18 2013 12:20PM [1] 2 VEHS ON NARROW ON RS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.145272,33.995464,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01874</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:15PM <br> 1179-Trfc Collision-1141 Enrt <br> Sr110 S / Sr110 S Avenue 52 Onr </p>
+        <p align="left">May 18 2013 12:25PM [18] [FSP] has closed their incident [130518LAFSP00068]<br />May 18 2013 12:24PM [16] [Notification] [CHP]-[15] RDWY CLR//FSP CAN 1022 [Shared] [Shared]<br />May 18 2013 12:24PM [15] RDWY CLR//FSP CAN 1022 [Shared]<br />May 18 2013 12:21PM [13] 10 97 //WILL BE 1182 ONLY//CONT FIRE AS PREC//OFF AVE 43  [Shared]<br />May 18 2013 12:18PM [10] [Notification] [CHP]-INV PTY ADVISED SHE IS ON THE SB 110 RIGHT AFTER ONR SHE WAS REAR ENDED IN WHI HOND CIV WILL 1023 THERE FOR CHP  [Shared]<br />May 18 2013 12:17PM [6] 1039 LAFD<br />May 18 2013 12:16PM [3] LITTLE GIRL IN ONE OF THE VEHS <br />May 18 2013 12:16PM [1] WHI SEDAN AND DRK COLOR SEDAN  BLCKING AVENUE 52 ONR<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.19783,34.102717,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01841</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:08PM <br> 1125-Traffic Hazard <br> Sr170 N / Burbank Blvd </p>
+        <p align="left">May 18 2013 12:22PM [7] [FSP] has closed their incident [130518LAFSP00067]<br />May 18 2013 12:13PM [5] PLS ROLL FSP BT 27 [Shared]<br />May 18 2013 12:08PM [1] CALLER STATES MERZ MODEL STALLED IN 4 LANE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.388687,34.1721,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01800</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:58AM <br> 1182-Trfc Collision-No Inj <br> N Hazard Ave / Floral Dr </p>
+        <p align="left">May 18 2013 11:59AM [1] RED FORD MUS VS SIL MERZ VN - RS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.179875,34.044185,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01796</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:57AM <br> 1183-Trfc Collision-Unkn Inj <br> Sr134 W / Cahuenga Blvd </p>
+        <p align="left">May 18 2013 11:58AM [1] GRY TOYT CAM VS SIL JEEP ON R/S<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.361557,34.153313,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01799</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:57AM <br> 1183-Trfc Collision-Unkn Inj <br> I210 E / HUBBARD ST </p>
+        <p align="left">May 18 2013 12:15PM [11] 1039 3A - ROWLETTE TOW ETA 25-30MIN SV#2489 <br />May 18 2013 12:14PM [10] [Rotation Request Comment] 1039 FRANCOS 661-251-3121 ETA 20 OL<br />May 18 2013 12:13PM [7] A78-500  1185 FOR RED HOND ACC FRNT END DMG<br />May 18 2013 11:59AM [1] 2 VEH TC  -POI EB 210 AT HUBBARD - LAPD RQ CHP - LAPD IS 97<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.429456,34.308186,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01793</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:55AM <br> 20002-Hit and Run No Injuries <br> E Olympic Blvd / S Indiana St </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.192246,34.018844,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01782</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:51AM <br> 1125-Traffic Hazard <br> Us101 W Van Nuys Blvd Onr / Us101 W Van Nuys Blvd Ofr </p>
+        <p align="left">May 18 2013 11:52AM [1] BRO MERZ SUV BLKNG #2 LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.448676,34.157405,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01771</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:48AM <br> 1125-Traffic Hazard <br> Us101 S / Reyes Adobe Rd </p>
+        <p align="left">May 18 2013 11:50AM [2] [Appended, 11:50:56] TIRE TREAD IN # 3 LN<br />May 18 2013 11:49AM [1] LARGE TIRE THREAD IN 3 LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.78106,34.146778,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01732</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:39AM <br> 20002-Hit and Run No Injuries <br> I5 N / Griffith Park Dr </p>
+        <p align="left">May 18 2013 11:40AM [1] RP INVOVLED IN A GRY SCION - ON THE RS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.272529,34.124297,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LAFSP00052</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:30AM <br> 1183-Trfc Collision-Unk Inj <br> I405 N / VENTURA BLVD </p>
+        <p align="left">May 18 2013 12:23PM [33] [CHP] has closed their incident [130518LA01619]<br />May 18 2013 12:09PM [29] [FSP] has closed their incident [130518LAFSP00058]<br />May 18 2013 12:04PM [28] PER 404 - PLS HAVE 1185 98 SEPULVEDA/GREENLEAF - ONLY 1 1185 IS NEEDED  [Shared]<br />May 18 2013 11:44AM [26] [Notification] [CHP]-STILL REQ FSP TO CLR RDWY PER 404, BT 10 THX [Shared]<br />May 18 2013 11:37AM [22] [Notification] [FSP]-10C HAS A VISUAL - VEHICLES ON RS - FSP WILL 1022 UNLESS UNIT ADVSES  [Shared]<br />May 18 2013 11:30AM [16] [Appended, 11:31:22] PTYS STANDING OUT SIDE OF THEIR VEHS [Shared]<br />May 18 2013 11:30AM [18] [Appended, 11:31:22] 3 VEHS INVOL [Shared]<br />May 18 2013 11:21AM [1] [10] 1039 3A - SO#00750 //  OP#Y399 // UNK PROVDER[Shared]<br />May 18 2013 11:15AM [4] [7] [Notification] [CHP]-PER DUP - AT VENTURA - 2 BLK PRIUSES VS SIL CHEV SD [Shared]<br />May 18 2013 11:14AM [6] [5] 1.2 LANE IS BLOCKED [Shared]<br />May 18 2013 11:14AM [7] [4] BEHS TRIED TO ADVOID DEBRIS AND CHAIN REACTION OCCURRED [Shared]<br />May 18 2013 11:14AM [8] [3] CALLER STATES 2 1185 NEEDED [Shared]<br />May 18 2013 11:09AM [10] [1] BLK TOYT PRI VS BLK TOYT PRI - BLK'G #1[Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.467958,34.154133,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01652</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:15AM <br> 20002-Hit and Run No Injuries <br> I605 N / Valley Blvd </p>
+        <p align="left">May 18 2013 12:28PM [15] L/ 8Y29214 WHI PK  - VICT DID A 360 SPINOUT  FACING WW #3 LN<br />May 18 2013 11:44AM [8] 1039 RP CORR 1020 IS -  NB 605 JNO VALLEY - PLS ROLL ELA CHP <br />May 18 2013 11:24AM [6] 1039 RP - HUSBAND UNABLE TO FIND SV - ENRT BACK TO SCENE - BLK HOND ACC AND WHI TOYT 1023<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.004172,34.054262,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LAFSP00039</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:08AM <br> 1183-Trfc Collision-Unk Inj <br> I5 N / Sr110 N I5 N Con </p>
+        <p align="left">May 18 2013 11:47AM [67] [CHP] has closed their incident [130518LA01594]<br />May 18 2013 11:23AM [63] 1039 3A COPIES UPDATE -  LINE #83 [Shared]<br />May 18 2013 11:21AM [62] FSP 97 * TAKING VEHS OFF AT GLENDALE  [Shared]<br />May 18 2013 11:20AM [60] 1039 3A * S/O 00700 EAGLE ROCK SERVICES - ETA 25 OL  [Shared]<br />May 18 2013 11:18AM [59]  PLS ROLL 3A [Shared]<br />May 18 2013 11:14AM [56] 1039 UNITED CARRIER - ETA 15-20  [Shared]<br />May 18 2013 11:13AM [47] [FSP] has closed their incident [130518LAFSP00036]<br />May 18 2013 11:13AM [10] BLK FORD TAURUS MAJOR FRONT END - PLS START 1 1185 [Shared]<br />May 18 2013 11:13AM [46] [Appended, 11:13:57] [36] BLK FORD TAURUS MAJOR FRONT END - PLS START 1 1185 [Shared]<br />May 18 2013 11:13AM [9] #1 LANE BLOCKED [Shared]<br />May 18 2013 11:13AM [45] [Appended, 11:13:57] [35] #1 LANE BLOCKED [Shared]<br />May 18 2013 11:09AM [7] [CHP] has closed their incident [130518LA01611]<br />May 18 2013 11:08AM [1] [3] ALSO PTYS TAKING PICTURES OUT SIDE OF THEIR VEHS [Shared]<br />May 18 2013 11:08AM [41] [Appended, 11:13:57] [31] [Appended, 11:09:45] [3] ALSO PTYS TAKING PICTURES OUT SIDE OF THEIR VEHS  [Shared]<br />May 18 2013 11:07AM [32] [Appended, 11:13:56] [22] [FSP] has closed their incident [130518LAFSP00037] [Shared]<br />May 18 2013 11:07AM [39] [Appended, 11:13:57] [29] [Appended, 11:09:45] [1] 3 VEHS INVOL BLK VEH AND WHI TRK AND 3RD VEHS [Shared]<br />May 18 2013 11:07AM [3] [1] 3 VEHS INVOL BLK VEH AND WHI TRK AND 3RD VEHS[Shared]<br />May 18 2013 11:05AM [15] [Appended, 11:13:55] [5] [CHP] has closed their incident [130518LA01593] [Shared]<br />May 18 2013 11:03AM [25] [Appended, 11:13:56] [15] [Appended, 11:07:54] [6] [4] [Appended, 11:05:24] [1] BLK FORD FUS VS SUV - BLKING 1,2 LNS  RP ON SB SIDE// FSP BT 4//[Shared] [Shared]<br />May 18 2013 11:03AM [11] [Appended, 11:13:55] [1] [1] BLK FORD FUS VS SUV - BLKING 1,2 LNS  RP ON SB SIDE// FSP BT 4//[Shared] [Shared]<br />May 18 2013 11:03AM [28] [Appended, 11:13:56] [18] [Appended, 11:07:54] [9] [1] 2 VEHS #1 2 VEHS RS[Shared] [Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.234118,34.087198,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA01493</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 10:24AM <br> 1125-Traffic Hazard <br> I10 E / I10 E Holt Ave E Onr </p>
+        <p align="left">May 18 2013 12:03PM [7] 1039 JANS TOWING ETA 15-20 [Shared]<br />May 18 2013 12:01PM [6] 105 - START 1185 FOR F  [Shared]<br />May 18 2013 10:24AM [4] [FSP] has closed their incident [130518LAFSP00016]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.861088,34.068497,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA00989</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  6:57AM <br> CLOSURE of a Road <br> I5 S / Lakewood Blvd </p>
+        <p align="left">May 18 2013  6:58AM [1] #1 LN MOVING CLOSURE // CT SPRAYING CD // SB 5 FROM LAKEWOOD TO CO LINE // ALSO NB 5<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#emergency</styleUrl>
+      <Point><coordinates>-118.111836,33.957828,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA00889</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  5:57AM <br> CLOSURE of a Road <br> I605 S Telegraph Rd Onr / I605 S </p>
+        <p align="left">May 18 2013  9:23AM [4] 83-MZP1  OPENING SB 605 TO NB 5 // KEEP SB 605 TO SB 5 // TELEGRAPH ONR ALSO OPENED UP<br />May 18 2013  6:47AM [3] TMC COPIES CLOSURE INFO<br />May 18 2013  6:27AM [2] FW: Message from unit
+-------------Original Message----------------
+From:	83-MZP1
+Sent:	05/18/2013 06:22:51
+To:	83-Santa Fe Springs
+Subject:	Message from unit
+
+.JUST FOR INFO, WE WILL HAVE THE TELEGRAPH RD; ON RAMP TO S-B I-605 CLOSED AND THE TRANS S-B 605 TO BOTH NORTH AND SOUTH I-5 TILL 1300<br />May 18 2013  6:23AM [1] MZP1 WB TELEGRAPH TO 605 AND  SB 605 TO SB 5  CLOSED UNTIL 1600<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#emergency</styleUrl>
+      <Point><coordinates>-118.092226,33.949495,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA00707</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  3:55AM <br> 1179-Trfc Collision-1141 Enrt <br> Sr60 E / Hacienda Blvd </p>
+        <p align="left">May 18 2013 10:50AM [56] [Appended, 10:50:57] VS CD [Shared]<br />May 18 2013 10:50AM [57] [Appended, 10:50:57] 2 VEHS [Shared]<br />May 18 2013  4:21AM [33] 83-CZP1  REQ 1 MORE 1185 FOR MINIVAN FURTHER EAST THAN POI [Shared]<br />May 18 2013  4:18AM [31] [Rotation Request Comment] 1039 BOB'S TOWING ETA 20 OR LESS [Shared]<br />May 18 2013  4:13AM [26] 83-CZP1  REQ 1 1185 [Shared]<br />May 18 2013  4:04AM [24] C83-602  BRINGING IN A BREAK EB 60 AT 7TH [Shared]<br />May 18 2013  4:01AM [15] RP IN WHI MINI VAN IS JWO AZUSA AVE ON RS <br />May 18 2013  3:58AM [17] [Appended, 04:02:24] [2] CAMARO IN CD // MINIVAN ON RS<br />May 18 2013  3:58AM [16] [Appended, 04:02:24] [1] 2 VEH TC // BLK CHEV CAMARO VS WHI MINIVAN<br />May 18 2013  3:58AM [12] [4] RP SAW A VEH COMING FRM THE REAR AND HIT HIM<br />May 18 2013  3:57AM [3] 1039 LACOFD <br />May 18 2013  3:57AM [2] [Notification] [CHP]-MALE IN BLK SD APPRS TRAPPED <br />May 18 2013  3:57AM [11] [3] RP WHI DODGE MINI VAN  ON RS<br />May 18 2013  3:56AM [1] 2 VEHS ///BLK SD IN HOV LN///WHI SD ON RS <br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.964445,34.006817,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA00379</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  2:02AM <br> 1179-Trfc Collision-1141 Enrt <br> I710 N / Bandini Blvd </p>
+        <p align="left">May 18 2013  4:36AM [61] TMC COPIES SIGALERT CANCELLATION - 10-39 MEDIA [Shared]<br />May 18 2013  4:33AM [60] 82-74 RDWY CLR -CANCEL SIGALERT  [Shared]<br />May 18 2013  4:20AM [59] SVS ENTRY
+TOWED/STORED VEHICLE
+LIC/6SLD619 LIS/CA LIY/2013 LIT/PC
+2000 FORD EPD LL GRY VIN/1FMRU1561YLC06075
+ORI/CA0199935 OCA/LA00379 FCN/3111313800840
+DOT/20130518 
+MIS/NAVARROS TOW 323-780-4911 22651B  ID/20033 A15577
+NOA/N
+ENT/ON CALIF FILE ONLY
+    
+ [Shared]<br />May 18 2013  3:36AM [54] TMC COPIES SIGALERT UPDATE - THANK YOU - 10-39 MEDIA [Shared]<br />May 18 2013  3:36AM [53] 82-74 SIGALERT EXTENDED ADDL HOUR  [Shared]<br />May 18 2013  3:36AM [52] [Notification] [CHP]-TMC INQUIRING FROM UNIT IF SIGALERT NEEDS TO BE EXTENDED? - THANK YOU [Shared]<br />May 18 2013  3:11AM [50] [Rotation Request Comment] 1039 NAVARROS TOW 323-780-4911 ETA 20 OR LESS W/ROTATOR [Shared]<br />May 18 2013  3:06AM [47] C82-074  REQ 1 1185 ROTATOR [Shared]<br />May 18 2013  3:01AM [46] 82-18 EXTEND SIGALERT ADDL 30 MIN DURATION [Shared]<br />May 18 2013  3:00AM [43] [Notification] [CHP]-TMC INQUIRING FROM UNIT IF SIGALERT NEEDS TO BE EXTENDED? - THANK YOU [Shared]<br />May 18 2013  2:48AM [41] C82-018  1039 HELMS and HILL TOW COPIES 1022 [Shared]<br />May 18 2013  2:48AM [40] C82-018  1022 1185 [Shared]<br />May 18 2013  2:47AM [39] 82-MZP4  INFO FOR CT-SEVERAL GAPS IN CLOSURE [Shared]<br />May 18 2013  2:45AM [38] [Rotation Request Comment] 1039 HELMS andHILL 323-889-4900 ETA 30 OR LESS [Shared]<br />May 18 2013  2:43AM [36] C82-018  SIGALERT ISSUED ON BLU DELAYED DUE TO LG/370 [Shared]<br />May 18 2013  2:34AM [34] 82-18 REQ 1 1185 HD  [Shared]<br />May 18 2013  2:31AM [32] [Notification] [CHP]-PER LACOFD, AS ENGINES WERE GOING 98, THEY HAD A VIS OF A SIL FORD EXPLORER APPROX 200 YDS JNO OF THE TC LOC  --  VEH POSS INVLD IN TC AND IS 1124 [Shared]<br />May 18 2013  2:19AM [27] TMC COPIES SIGALERT - 10-39 MEDIA - THANKS [Shared]<br />May 18 2013  2:18AM [26] C82-018  REQ SIGALERT #3-4 LNS 30 MIN DURATION [Shared]<br />May 18 2013  2:17AM [24] [Notification] [CHP]-TMC INQUIRING FROM UNIT IF SIGALERT NEEDED? - THANK YOU [Shared]<br />May 18 2013  2:11AM [22] [Rotation Request Comment] 1039 PEPES TOW 323-268-1609 ETA 20 OR LESS W/2 [Shared]<br />May 18 2013  2:06AM [21] 82-MZP1  REQ 2 1185 [Shared]<br />May 18 2013  2:05AM [15] 82-MZP1  1 VEH BLKING #1 1124 -SECOND VEH BLKING #2 LN [Shared]<br />May 18 2013  2:04AM [13] [Appended, 02:04:40] [6] [Notification] [CHP]-LACOFD ADV RECEIVED RPT OF TC HERE -- LACOFD ENRT  [Shared]<br />May 18 2013  2:03AM [5] [Appended, 02:04:32] [4] [2] TC'D WITH CD<br />May 18 2013  2:03AM [4] [Appended, 02:04:32] [3] [1] SOLO VEH TC // BLK BMW<br />May 18 2013  2:03AM [18] [2] MZP4 RUNNING A BREAK [Shared]<br />May 18 2013  2:03AM [2] [Appended, 02:04:32] [1] SOLO VEH BLKNG #4 LN ON A BLIND CURVE, 2ND VEH POSS INVLD<br />May 18 2013  2:03AM [1] 2 VEH TC *** BLCOKING #1<br />May 18 2013  2:02AM [17] [1] VEH INTO CD [Shared]<br />May 18 2013  2:02AM [12] [Appended, 02:04:40] [5] PER DUPE VEHS ARE COMING IN FAST /  VERY DARK OUT  [Shared]<br />May 18 2013  2:01AM [9] [Appended, 02:04:40] [2] VEH BLKNG #1 APPEARS TO BE O/HEATING  [Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.176139,33.998544,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518LA00007</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:00AM <br> 1013-Road/Weather Conditions <br> 2901 W Broadway </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.227297,34.144921,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130517LA04092</name>
+      <description><![CDATA[
+        <p align="left">May 17 2013  9:28PM <br> CLOSURE of a Road <br> I210 W / Gould Ave </p>
+        <p align="left">May 17 2013  9:29PM [3] EB LANES FROM BERKSHIRE TO ARROYO #4 LANE ALSO **<br />May 17 2013  9:29PM [2] #4 LANE , ONR AND OFR CLOSED **<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#emergency</styleUrl>
+      <Point><coordinates>-118.189242,34.201728,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MR00315</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:29PM <br> 1125A-Animal Hazard <br> Merced Falls Rd / Hornitos Rd </p>
+        <p align="left">May 18 2013 12:30PM [1] INJ DEER IN THE RDWY / NFI PER SO<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-120.329632,37.524913,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MR00310</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1183-Trfc Collision-Unkn Inj <br> Sr99 S W Cleveland Ave Ofr / W Cleveland Ave </p>
+        <p align="left">May 18 2013 12:29PM [1] WHI SD INTO A TREE ON THE ONR - FRONT DOOR OPEN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-120.077092,36.974649,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MR00298</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:03PM <br> 1125-Traffic Hazard <br> Sr41 / Road 425c </p>
+        <p align="left">May 18 2013 12:27PM [7] A57-501  1185 97<br />May 18 2013 12:15PM [5] [Rotation Request Comment] 1039 DOCS 559-683-7676<br />May 18 2013 12:14PM [4] A57-501  1185 1/2 WAY UP DEADWOOD COMING FRM THE NORTH END<br />May 18 2013 12:03PM [2] HAS 1185 ENRT BUT 1125<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.648812,37.298032,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MR00294</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:56AM <br> 20002-Hit and Run No Injuries <br> 54792 Kowana Ln </p>
+        <p align="left">May 18 2013 11:57AM [1] OCCRD AT GRACE COMM CHURCH 56442 RD 200 AT APPROX 1040HRS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.549352,37.221666,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518MR00280</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:34AM <br> 1179-Trfc Collision-1141 Enrt <br> Sr99 S / Sr 99 S East Hatch Rd Onr </p>
+        <p align="left">May 18 2013 12:22PM [31] A48-041  ALL VEHS REMOVED FRM FRWY ALL LANES OPEN [Shared]<br />May 18 2013 11:49AM [26] A48-011  DEBRIS TO CD [Shared]<br />May 18 2013 11:46AM [25] [Rotation Request Comment] 1039 ANDERSON TOW 209-538-8697 [Shared]<br />May 18 2013 11:45AM [24] A48-041  1185 FB [Shared]<br />May 18 2013 11:42AM [22] A48-041  ALL VEHS TO RHS -- VEH DEBRIS IN #1 REQ INCOMING UNITS TO REMOVE [Shared]<br />May 18 2013 11:42AM [21] A48-041  2 PK ARE PARK OF ORIGINAL TC -- OCCD JSO WHITMORE -- WILL BE GOING TO THAT 1020 [Shared]<br />May 18 2013 11:40AM [17] A48-041  2 PK IN CD PART 1125 #1 -- SB AT WHITMORE [Shared]<br />May 18 2013 11:36AM [11] 1039 SRCC  [Shared]<br />May 18 2013 11:35AM [7] [Appended, 11:36:09] [3] 1039 AMR<br />May 18 2013 11:35AM [2] VEHS 1125<br />May 18 2013 11:35AM [5] [Appended, 11:36:09] [1] VEH UNDER A BIG RIG ON RHS<br />May 18 2013 11:35AM [1] VEH UNDER A BIG RIG<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-120.974851,37.607312,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BF00162</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1125-Traffic Hazard <br> James Rd / Airport Dr </p>
+        <p align="left">May 18 2013 12:29PM [3] 53' REEFER TRLR PRTLLY 1125 - NO TRUCK ATTACHED<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.037745,35.452736,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BF00150</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:48AM <br> 1179-Trfc Collision-1141 Enrt <br> Sr33 / Lockwood Valley Rd </p>
+        <p align="left">May 18 2013 12:03PM [4] [Rotation Request Comment] 1039 JIMS 661-832-7174<br />May 18 2013 12:03PM [3] PER LOS PADRES - REQ 1185 FB FOR MC<br />May 18 2013 11:49AM [2] ADVS FIRE IS ENRT<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.355838,34.686733,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BF00051</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  2:33AM <br> TADV-Traffic Advisory <br> 0 Bakersfield Traffic Advisories </p>
+        <p align="left">May 18 2013  2:35AM [11] SR99 OPEN <br />May 18 2013  2:34AM [10] SR223 OPEN <br />May 18 2013  2:34AM [9] SR184 OPEN <br />May 18 2013  2:34AM [8] SR33 OPEN <br />May 18 2013  2:34AM [7] SR166 OPEN <br />May 18 2013  2:34AM [6] SR178 OPEN <br />May 18 2013  2:34AM [5] SR155 OPEN <br />May 18 2013  2:34AM [4] SR46 OPEN <br />May 18 2013  2:34AM [3] SR58 OPEN  <br />May 18 2013  2:34AM [1] I5 OPEN <br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.043193,35.39678,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518FR00214</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:19PM <br> 1182-Trfc Collision-No Inj <br> S Frankwood Ave / Central Ave </p>
+        <p align="left">May 18 2013 12:19PM [1] 65-062  BICYCLE VS VEHICLE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.448504,36.676715,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518FR00181</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:10AM <br> 1125-Traffic Hazard <br> Sr99 S / Sr99 S Tulare Ave Ofr </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-119.32912,36.214075,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OCFSP00006</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:29PM <br> 1125-Traffic Hazard <br> I5 S / Camino Las Ramblas </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.669962,33.466954,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OC00313</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:28PM <br> 1125-Traffic Hazard <br> I5 S / Camino Las Ramblas </p>
+        <p align="left">May 18 2013 12:29PM [1] WHI ENTERPRISE MOVING TRUCK BLOCKING #4<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.669962,33.466954,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OC00312</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:26PM <br> 1182-Trfc Collision-No Inj <br> I405 N / Sr22 W </p>
+        <p align="left">May 18 2013 12:27PM [1] RS 2 VEHS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.080158,33.774507,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OCFSP00005</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:16PM <br> 1125-Traffic Hazard <br> Sr22 W The Block Dr Ofr / The City Dr S </p>
+        <p align="left">May 18 2013 12:16PM [2] [1] ONG CONE IN MIDDLE LN[Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.888771,33.779132,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OC00306</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:15PM <br> 1125-Traffic Hazard <br> Sr22 W The Block Dr Ofr / The City Dr S </p>
+        <p align="left">May 18 2013 12:16PM [1] ONG CONE IN MIDDLE LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.888771,33.779132,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OCFSP00004</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:12PM <br> 1125-Traffic Hazard <br> I5 S / I5 S Ortega Hwy Ofr </p>
+        <p align="left">May 18 2013 12:29PM [8] UNIT WILL 1023 IN THE CD UNTIL FSP GOES 97  [Shared]<br />May 18 2013 12:12PM [1] [1] WHI TOYT TUND IN CD W/FLAT - UNIT OSHOT - TURNING AT CAM CAP[Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.659429,33.505426,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OC00302</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:12PM <br> 1125-Traffic Hazard <br> I5 S / I5 S Ortega Hwy Ofr </p>
+        <p align="left">May 18 2013 12:29PM [8] UNIT WILL 1023 IN THE CD UNTIL FSP GOES 97  [Shared]<br />May 18 2013 12:12PM [1] WHI TOYT TUND IN CD W/FLAT - UNIT OSHOT - TURNING AT CAM CAP<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.659429,33.505426,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OC00289</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:05PM <br> 1125-Traffic Hazard <br> Sr22 W / Sr22 W Harbor Blvd Ofr </p>
+        <p align="left">May 18 2013 12:26PM [34] 3A FOR CV WILL NEED TO BE FB, 1039 ARMSTRONG  - FB ENRT W/ETA OF 10 OL [Shared]<br />May 18 2013 12:21PM [31] [FSP] has closed their incident []<br />May 18 2013 12:21PM [30] 20 ADVS RDWY CLR - OUT W/ WHI CHEV PK TK THAT LOST THE RIM  [Shared]<br />May 18 2013 12:18PM [29] BREAK STARTED NOW [Shared]<br />May 18 2013 12:18PM [27] 139-225  REQS BREAK TO START // WB AT HASTER [Shared]<br />May 18 2013 12:13PM [23] 1039 3A FLTBED 30 OL ARMSTRONG #2432 [Shared]<br />May 18 2013 12:13PM [22] [Notification] [CHP]-PER DUPE, APPROX 8 VEHS ON RS W/FLAT TIRES [Shared]<br />May 18 2013 12:12PM [21] 1039 3A FOR BLK TOYT CV -- HAS 2 FLTS [Shared]<br />May 18 2013 12:11PM [20] [Notification] [CHP]-[19] ABOUT 20 VEHS - WB 22 JEO EUCLID WITH FLAT TIRES ALL ON SR [Shared] [Shared]<br />May 18 2013 12:11PM [19] ABOUT 20 VEHS - WB 22 JEO EUCLID WITH FLAT TIRES ALL ON SR [Shared]<br />May 18 2013 12:08PM [11] WHEEL IN LANES 1125 STILL [Shared]<br />May 18 2013 12:08PM [10] BLK TOYT CV , BLU TOYT COA, BLU FORD EXP ALL ON RS WITH FLTS  [Shared]<br />May 18 2013 12:07PM [7] [Appended, 12:07:52] RP ON RS OF THE HARBOR OFR - WHI CHEV SUB [Shared]<br />May 18 2013 12:07PM [8] [Appended, 12:07:52] RIM IN #1 LN OF MAIN LINE [Shared]<br />May 18 2013 12:06PM [2] WHI PULLED TO RS // POSS RELATED<br />May 18 2013 12:06PM [1] RIM IN THE #3<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.914741,33.769775,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518OC00058</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  1:43AM <br> 1013-Road/Weather Conditions <br> 6681 Marine Way </p>
+        <p align="left">May 18 2013 10:44AM [2] CLOSURES ARE CLEAR - ALL LNS OPEN <br />May 18 2013  6:26AM [1] CLOSURE SB 55 FROM BAKER TO JNO 73 - 3/4 CLOSED TIL NOON^<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.757184,33.677582,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BS00118</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:26PM <br> 1125-Traffic Hazard <br> Sr138 / Sr2 </p>
+        <p align="left">May 18 2013 12:27PM [1] MATTRESS IN THE LANE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.576343,34.390771,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130517BS00192</name>
+      <description><![CDATA[
+        <p align="left">May 17 2013  3:36PM <br> WIND Advisory <br> 0 Woodham Ave </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.07474,34.879621,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BCFSP00019</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:26PM <br> 1125-Traffic Hazard <br> I5 N / Garnet Ave </p>
+        <p align="left">May 18 2013 12:31PM [17] 6 VEH UP THE EMBANKMENT // 1185 BO RIGHT REAR [Shared]<br />May 18 2013 12:26PM [8] PER INV - LOST CONTROL DUE TO VEH PUSHING HER INTO CD  [Shared]<br />May 18 2013 12:24PM [3] [1] WHI SD IN CD FACING SB[Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.21567,32.806764,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BCFSP00018</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:24PM <br> 1182-Trfc Collision-No Inj <br> I8 W / I805 Eo </p>
+        <p align="left">May 18 2013 12:32PM [10] [Notification] [CHP]-SDFD IS 1097 // ADVS THEY ARE WORKING ON A COUPLE OF AMA'S - STILL REQ CHP FOR 1126'S  [Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.128275,32.773054,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00676</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:21PM <br> 1182-Trfc Collision-No Inj <br> I5 N / Checkpoint No </p>
+        <p align="left">May 18 2013 12:22PM [4] LBLU TOYT SD VS BRO TOYT CAM<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.554399,33.371512,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00670</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:20PM <br> 1182-Trfc Collision-No Inj <br> I8 W / I805 Eo </p>
+        <p align="left">May 18 2013 12:32PM [10] [Notification] [CHP]-SDFD IS 1097 // ADVS THEY ARE WORKING ON A COUPLE OF AMA'S - STILL REQ CHP FOR 1126'S  [Shared]<br />May 18 2013 12:21PM [2] SIL HONDA ACCORD<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.128275,32.773054,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00669</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:20PM <br> 1125-Traffic Hazard <br> Jamacha Rd / Grand Ave </p>
+        <p align="left">May 18 2013 12:20PM [1] MATRESS IN #2 LANE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-116.997249,32.714919,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00667</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:16PM <br> 20002-Hit and Run No Injuries <br> 2955 Alpine Blvd </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-116.750277,32.834522,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00662</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:15PM <br> 20002-Hit and Run No Injuries <br> 1175 York Dr </p>
+        <p align="left">May 18 2013 12:16PM [1] UNK VEH HIT STUCCO GATE AND LIGHT ON RP'S PROPERTY<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.213476,33.188963,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00625</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:49AM <br> 20002-Hit and Run No Injuries <br> 3261 Ivanhoe Ranch Rd </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-116.906792,32.745482,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00611</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:40AM <br> 1125-Traffic Hazard <br> I15 S / Poway No (rancho Penasquitos) </p>
+        <p align="left">May 18 2013 11:40AM [1] LRG TRASH BAG IN #1<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.104876,32.95005,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BC00614</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:40AM <br> 1179-Trfc Collision-1141 Enrt <br> W Lilac Rd / Lilac Rd </p>
+        <p align="left">May 18 2013 11:42AM [2] BIKE AND RIDER UP AND ON RHS<br />May 18 2013 11:41AM [1] MC TC // LOST CONTROL AT A TURN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.084932,33.271251,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00906</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:25PM <br> FIRE-Report of Fire <br> E Airport Dr / S Vineyard Ave </p>
+        <p align="left">May 18 2013 12:26PM [1] PTY DISC -- 1039 FD<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.611001,34.062113,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00900</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:21PM <br> 1125-Traffic Hazard <br> I15 S No / Sr138 </p>
+        <p align="left">May 18 2013 12:22PM [1] METAL DEBRIS IN THE #2 LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.478692,34.31525,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00895</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:20PM <br> 1125-Traffic Hazard <br> I215 S / N Mount Vernon Ave </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.316809,34.140179,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00888</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:18PM <br> 1125-Traffic Hazard <br> I215 S No / Barton Rd </p>
+        <p align="left">May 18 2013 12:19PM [2] CLOSE TC <br />May 18 2013 12:18PM [1] FULL TIRE IN SLOW LN<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.320985,34.037452,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00882</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:13PM <br> 1125-Traffic Hazard <br> I15 N At / I215 </p>
+        <p align="left">May 18 2013 12:31PM [12] A75-151A  UTL ON 1125 [Shared]<br />May 18 2013 12:21PM [9] [Appended, 12:24:31] [4] SEMI THAT HIT THE TIRE IS NOW ON THE RS IN FRONT OF THIS PARTY<br />May 18 2013 12:18PM [3] [Notification] [CHP]-Problem changed from 1124-Abandoned Vehicle to 1125-Traffic Hazard by CHP<br />May 18 2013 12:14PM [2] RP ADV SEMI HIT IT UNK WHERE IT WENT<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.409496,34.224248,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00893</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:10PM <br> 1125-Traffic Hazard <br> I10 E Eo / Sierra Ave </p>
+        <p align="left">May 18 2013 12:15PM [5] WHEN OFFICER GOES 97 PTY WANT TO TALK TO TOW COMPANY BEFORE WE ROLL THEM<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.427323,34.06721,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00868</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:04PM <br> 1183-Trfc Collision-Unkn Inj <br> I215 S No / University Ave Rv </p>
+        <p align="left">May 18 2013 12:06PM [2] UNK WHAT WAS IN THE TRA IT LOOKED LIKE A HORSE TRA<br />May 18 2013 12:06PM [1] TRA CAME APART FROM TRK AND SLAMMED INTO RS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.338447,33.978632,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00849</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:53AM <br> 1182-Trfc Collision-No Inj <br> I10 W / I10 W CHERRY AVE OFR </p>
+        <p align="left"> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.484635,34.066065,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00834</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:45AM <br> 1179-Trfc Collision-1141 Enrt <br> Sr138 / Balsam Ln </p>
+        <p align="left">May 18 2013 11:52AM [19] SBSO REQ ETA - CPS 97<br />May 18 2013 11:47AM [10] 1039 FD<br />May 18 2013 11:47AM [7] [3] VEH VS  BICYCLIST<br />May 18 2013 11:47AM [3] CHILD ON BIKE HIT -- VEH STOPPED HONDA ACCORD<br />May 18 2013 11:47AM [6] [2] CONF TO CALFIRE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.296655,34.243635,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00818</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:36AM <br> 1184-Provide Traffic Control <br> Sr18 / 4000 Ft Level </p>
+        <p align="left">May 18 2013 12:02PM [10] ALL 4 LNS OPEN NOW - SPOKE TO FD - ADV ANOTHER HELICOPTER GOING TO LAND HERE - REQ R1 FOR 1184 ---  R1 CPS F/18 AT LAKE GREGORY <br />May 18 2013 11:49AM [9] A101-010  FIRE and UNIT ALL FOUR LNS SHUT DOWN - AIR SHIP HAS LANDED<br />May 18 2013 11:46AM [8] FIRE CPS<br />May 18 2013 11:45AM [7] A101-012  4 OUT FOR BREAK<br />May 18 2013 11:45AM [6] FIRE COPIES FRM DALEY CANYON AND RED ROCK WALL<br />May 18 2013 11:44AM [4] [Notification] [CHP]-FIRE REQ ETA<br />May 18 2013 11:37AM [1] ETA 12 MINUTES FOR AIR SHIP -- THEY HAVE A MEDICAL AID AND REQUEST WE CLOSE DOWN SR18 ABOVE AND BELOW THE 4000 FT LEVEL SO THEY CAN LAND<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.30077,34.2278,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00802</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:24AM <br> 1125A-Animal Hazard <br> 39065 Oak Glen Rd </p>
+        <p align="left">May 18 2013 11:26AM [1] LARGE STEER RAN THROUGH THE RP'S PROPERTY AND NOW IS PROBABLY ON OAK GLEN RD X HARRIS -<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-116.952173,34.050546,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00447</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  6:23AM <br> CZP-Assist with Construction <br> I215 N To / Sr91 W Con </p>
+        <p align="left">May 18 2013  6:24AM [2] SWEEPING CONNECTORS TIL 1630 HRS<br />May 18 2013  6:23AM [1] ROLLING CLOSURE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.358147,33.991988,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00440</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  6:11AM <br> CLOSURE of a Road <br> I10 E Wo / Citrus Ave Font </p>
+        <p align="left">May 18 2013  6:13AM [1] EB 10 FROM JWO CITRUS UP TO/INCLUDING CITRUS OFR CLOSED FOR SLAB REPAIR TIL APPROX 1230<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#emergency</styleUrl>
+      <Point><coordinates>-117.462261,34.066384,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IN00408</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  5:29AM <br> CZP-Assist with Construction <br> I210 W I15 S CON / I15 S </p>
+        <p align="left">May 18 2013 10:56AM [5] HOLDING TRAFFIC  CHERRY ONR TO WB 210 -- AS A RESULT  OF  TC  VEHS DRIVING W/ WAY AT DAY CREEK<br />May 18 2013  6:11AM [2] PER CT CHANGNG1020-S TO   WB 210 TO SB 15  WILL BE WITHING THE CLOSURE<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.502404,34.131221,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BI00048</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:18PM <br> 1179-Trfc Collision-1141 Enrt <br> SR14 N DAWN RD OFR / SR14 N DAWN RD ONR </p>
+        <p align="left">May 18 2013 12:28PM [8] 1039 KCFD TO 1022<br />May 18 2013 12:21PM [3] VEH WENT ACROSS CD F/ SB SIDE AND IS NOW FACING W/WAY ON RS<br />May 18 2013 12:20PM [1] SIL SED ON RS - FACING W/WAY<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.16247,34.908128,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BI00036</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:05AM <br> 1182-Trfc Collision-No Inj <br> W Rosamond Blvd / Sierra Hwy </p>
+        <p align="left">May 18 2013 11:06AM [5] NEG 1125<br />May 18 2013 11:06AM [4] GLD HOND VS WHI TK PK<br />May 18 2013 11:05AM [2] 2 VEH TC<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-118.163291,34.864387,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518BI00035</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 11:01AM <br> 1179-Trfc Collision-1141 Enrt <br> Us395 / Garlock Rd </p>
+        <p align="left">May 18 2013 12:11PM [14] 59-61 REQ 1185 FOR 14-6 FOR A TAN HONDA ACC PLT 5XQP204<br />May 18 2013 11:39AM [12] [Rotation Request Comment] 1039 PEARSON TOW 760-446-6583<br />May 18 2013 11:37AM [11] A59-061  1185 FOR DODG 3500 PK OUT IN SOFT SAND<br />May 18 2013 11:02AM [1] RP WAS CUT OFF AND RAN OFF RDWY<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.670932,35.435519,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518CT00003</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 12:15PM <br> ANIMAL-Live or Dead Animal <br> I210 E Wo / Baseline St </p>
+        <p align="left">May 18 2013 12:16PM [3] [CHP] has closed their incident [130518IN00883]<br />May 18 2013 12:15PM [1] [1] DEAD DOG  -ON RS - CAL TRANS - NOT SURE IF YOU ALREADY HAVE THIS FOR REGULAR ROUNDS[Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-117.201302,34.125095,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518IC00132</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013 10:07AM <br> 1179-Trfc Collision-1141 Enrt <br> Shank Rd / Dietrich Rd </p>
+        <p align="left">May 18 2013 10:29AM [29] [CHP] has closed their incident []<br />May 18 2013 10:07AM [1] [20] A85-021  1039 INDIO COMM[Shared]<br />May 18 2013  9:28AM [7] [14] [Rotation Request Comment] 1039 J AND M TOW[Shared]<br />May 18 2013  9:27AM [8] [13] A85-021  ROLL 1185 FLATBED[Shared]<br />May 18 2013  9:17AM [12] [9] 1039 IID [Shared]<br />May 18 2013  9:03AM [15] [6] 1039 BWY FIRE [Shared]<br />May 18 2013  9:02AM [16] [5] 1039 GOLDCROSS[Shared]<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-115.474809,33.001161,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>CHP Incident 130518EC00021</name>
+      <description><![CDATA[
+        <p align="left">May 18 2013  8:59AM <br> 1179-Trfc Collision-1141 Enrt <br> Shank Rd / Dietrich Rd </p>
+        <p align="left">May 18 2013 10:07AM [20] A85-021  1039 INDIO COMM<br />May 18 2013  9:28AM [14] [Rotation Request Comment] 1039 J AND M TOW<br />May 18 2013  9:27AM [13] A85-021  ROLL 1185 FLATBED<br />May 18 2013  9:18AM [10] WCB W/ETA<br />May 18 2013  9:17AM [9] 1039 IID <br />May 18 2013  9:16AM [8] A85-021  ADV IID,  DAMAGE TO POWER POLE<br />May 18 2013  9:03AM [6] 1039 BWY FIRE <br />May 18 2013  9:02AM [5] 1039 GOLDCROSS<br />May 18 2013  9:00AM [3] RHS<br /> </p>
+        <p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#incident</styleUrl>
+      <Point><coordinates>-115.474809,33.001161,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Caltrans Highway Information</name>
+      <description><![CDATA[
+        <p align="left"> Highway 0 &nbsp;(Various) Inyo and Mono Counties</p>
+<p align="left">Highway Closure - One or more directions - Use Alternate Route</p>
+<p class="update-stamp">Last updated: 05/18/2013 12:33pm </p>]]>
+      </description>
+      <styleUrl>#emergency</styleUrl>
+      <Point><coordinates>,,0</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>

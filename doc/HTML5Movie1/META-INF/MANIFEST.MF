@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: AfPh3OJoypH966MludSW6f1RHg4=
+
+Name: assets/www/dizzy.mp4
+SHA1-Digest: vJWZ0j6W6uNZC3aZ4Tx26TQeeAE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: zaFfw1Zeyc1yiLjbyYmTgdmreVI=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: RRxOSvpmhVfCwiprVV/wZlaqQpw=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: Nq8q3HeTluE5JNCBpVvNy3BXtJI=
+
+Name: res/layout/activity_html5_movie_main.xml
+SHA1-Digest: BzthIhrSojl58RsCG494fWqT5Ro=
+
+Name: resources.arsc
+SHA1-Digest: fgQSONqbPQyriSNEZdaLG8bxSAY=
+
+Name: res/menu/html5_movie_main.xml
+SHA1-Digest: srmRmsMXzwOZZgVR+SybVKehvfs=
+
+Name: classes.dex
+SHA1-Digest: mqyTGb11Hx0OKtGuvVY+dr9gSbg=
+
+Name: assets/www/HTML5Video1.html
+SHA1-Digest: o1UpB5Ktljter0K021SIRyT//Zk=
+
+Name: res/drawable-xxhdpi/ic_launcher.png
+SHA1-Digest: GVIfdEOBv4gEny2T1jDhGGsZOBo=
+
+Name: assets/www/Pentagon_News_Sample.ogg
+SHA1-Digest: 0EhOqZilX9pAJL/m3q0q9ALKQwA=
+

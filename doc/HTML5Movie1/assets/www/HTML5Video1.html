@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adding Video to Canvas</title>        
+</head>
+<body>
+<video controls="controls" autoplay="autoplay">
+  <source src="dizzy.mp4" type="video/mp4" />
+</video>
+
+  <canvas id="canvas"></canvas>
+<!--
+  <script type="text/javascript">                
+    var timeOut = 30;
+
+    var video = document.createElement("video");
+  //video.src = "Rectangles1.mov";
+  //video.src = "Pentagon_News_Sample.ogg";
+    video.src = "dizzy.mp4";
+    video.controls = true;
+    document.body.appendChild(video);
+    
+    var canvas = document.getElementById("canvas")
+    var ctx = canvas.getContext("2d");
+    
+    video.onplay = function() {
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      drawMe();
+    };
+ 
+    function drawMe() {
+      if(video.paused || video.ended) return false;
+      ctx.drawImage(video, 0, 0);
+      setTimeout(drawMe, timeOut);
+    }
+  </script>
+-->
+
+</body>
+</html>
+
